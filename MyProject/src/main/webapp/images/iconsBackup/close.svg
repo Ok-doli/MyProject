@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.707" height="16.707" viewBox="0 0 16.707 16.707">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#697584}
+        </style>
+    </defs>
+    <g id="그룹_451" transform="translate(-320.646 -211.646)">
+        <path id="선_4" d="M0 0L16 16" class="cls-1" transform="translate(321 212)"/>
+        <path id="선_5" d="M0 0L16 16" class="cls-1" transform="translate(337 212) rotate(90)"/>
+    </g>
+</svg>

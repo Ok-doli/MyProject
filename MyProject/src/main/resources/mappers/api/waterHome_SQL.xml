@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="WaterHome">
+	<resultMap id="WaterHomeMap" type="hashMap"></resultMap>
+	
+	
+	<!-- 로그인 가맹점명 조회 -->
+	<select id="EntrpsNm_Select" resultType="hashmap">
+		<![CDATA[
+			SELECT DLVY_ENTRPS_CD, DLVY_ENTRPS_NM 
+			FROM TB_LM_DLVY_ENTRPS_MST
+			WHERE DLVY_ENTRPS_CD = #{dlvyEntrpsCd}
+	   	]]>
+	</select>	
+	
+	<!-- 관리자 요청 및 배송 조회 -->
+<!-- 	<select id="ROLE_ADMIN" resultType="hashmap"> -->
+<!-- 		<![CDATA[ -->
+<!-- 			SELECT A.CD,  -->
+<!-- 			    CASE WHEN COUNT(C.ODR_STTUS_CD) > 99 THEN '99+'  -->
+<!-- 			    ELSE TO_CHAR(COUNT(C.ODR_STTUS_CD)) END AS CNT -->
+<!-- 			FROM (SELECT GRP_CD, CD FROM TB_LM_COMMON_CD WHERE GRP_CD ='ODR_STTUS_CD') A   -->
+<!-- 			LEFT JOIN (SELECT *  -->
+<!-- 			            FROM TB_LM_ONL_ODR_LST B  -->
+<!-- 			            WHERE ODR_TYPE = 'PULMUONE'  -->
+<!-- 						  	AND DLVY_ENTRPS_CD = #{dlvyEntrpsCd}  -->
+<!-- 			                AND TO_CHAR(B.UDT_DT,'YYYYMMDD') = TO_CHAR(SYSDATE,'YYYYMMDD')  -->
+<!-- 			            ) C                                                                                  -->
+<!-- 			ON A.CD = C.ODR_STTUS_CD    -->
+<!-- 			GROUP BY A.CD -->
+			
+<!-- 			UNION ALL -->
+			
+<!-- 			SELECT 'DELIVERY_CNT' AS CD,TO_CHAR(COUNT(DLVY_ENTRPS_CD)) AS CNT FROM TB_LM_M_USER_MST  -->
+<!-- 			WHERE DLVY_ENTRPS_CD = #{dlvyEntrpsCd} -->
+<!-- 			AND USER_ID IS NULL -->
+<!-- 			GROUP BY DLVY_ENTRPS_CD -->
+
+<!-- 	   	]]> -->
+<!-- 	</select> -->
+	
+<!-- 	홈화면 카운팅 -->
+	<select id="ROLE_DELIVERY" resultType="hashmap">
+		<![CDATA[
+			SELECT 
+		 CASE WHEN RN.DELIVERY_CNT > 99 THEN '99+' 
+		 ELSE NVL(TO_CHAR(RN.DELIVERY_CNT),'0') END AS DELIVERY_CNT
+	    ,CASE WHEN RN.REQ_DLVY_CNT > 99 THEN '99+' 
+		 ELSE TO_CHAR(RN.REQ_DLVY_CNT) END AS REQ_DLVY_CNT
+		,CASE WHEN RN.ENTR_TRNO_CNT > 99 THEN '99+' 
+		 ELSE TO_CHAR(RN.ENTR_TRNO_CNT) END AS ENTR_TRNO_CNT
+		,CASE WHEN RN.RIGHT_CNT > 99 THEN '99+' 
+		 ELSE TO_CHAR(RN.RIGHT_CNT) END AS RIGHT_CNT
+		,CASE WHEN RN.LEFT_CNT > 99 THEN '99+' 
+		 ELSE TO_CHAR(RN.LEFT_CNT) END AS LEFT_CNT
+		,CASE WHEN RN.NOT_PROCESS_CNT > 99 THEN '99+' 
+		 ELSE TO_CHAR(RN.NOT_PROCESS_CNT) END AS NOT_PROCESS_CNT
+		,CASE WHEN RN.REQ_CNCL_DLVY_CNT > 99 THEN '99+' 
+		 ELSE TO_CHAR(RN.REQ_CNCL_DLVY_CNT) END AS REQ_CNCL_DLVY_CNT
+		 
+		 
+	FROM
+	(
+		SELECT 
+		(SELECT TO_CHAR(COUNT(DLVY_ENTRPS_CD)) AS CNT FROM TB_LM_M_USER_MST 
+			WHERE DLVY_ENTRPS_CD = #{dlvyEntrpsCd}
+			AND USER_ID IS NULL
+			GROUP BY DLVY_ENTRPS_CD) AS DELIVERY_CNT
+		,(SELECT COUNT(*)
+			FROM TB_LM_ONL_ODR_LST
+			WHERE 1=1
+			AND ODR_STTUS_CD ='REQ_DLVY'
+			AND TO_CHAR(REG_DT  ,'YYYYMMDD') = TO_CHAR(SYSDATE,'YYYYMMDD') 
+			AND (#{mobile} IS NULL OR  REPLACE(CRYPTO_AES128.DEC_AES(DLVY_MOBILE,'lms_table_key1!^'),'-','') = REPLACE(#{mobile},'-',''))
+			AND DLVY_ENTRPS_CD = #{dlvyEntrpsCd}
+			AND DLVY_ENTRPS_CD IN (SELECT A.DLVY_ENTRPS_CD 
+										   FROM TB_LM_DLVY_ENTRPS_MST A
+										   WHERE A.DLVY_ENTRPS_TYPE = 'FRANCHISE')) AS REQ_DLVY_CNT
+		,(SELECT COUNT(*)
+			FROM TB_LM_ONL_ODR_LST
+			WHERE 1=1
+			AND ODR_STTUS_CD ='ENTR_TRNO'
+			AND DLVY_PSBL = 'N'
+			AND TO_CHAR(REG_DT ,'YYYYMMDD') = TO_CHAR(SYSDATE,'YYYYMMDD') 
+			AND (#{mobile} IS NULL OR  REPLACE(CRYPTO_AES128.DEC_AES(DLVY_MOBILE,'lms_table_key1!^'),'-','') = REPLACE(#{mobile},'-',''))
+			AND DLVY_ENTRPS_CD = #{dlvyEntrpsCd}
+			AND DLVY_ENTRPS_CD IN (SELECT A.DLVY_ENTRPS_CD 
+										   FROM TB_LM_DLVY_ENTRPS_MST A
+										   WHERE A.DLVY_ENTRPS_TYPE = 'FRANCHISE')) AS ENTR_TRNO_CNT
+		,(SELECT COUNT(*)
+			FROM TB_LM_ONL_ODR_LST
+			WHERE 1=1
+			AND ODR_STTUS_CD IN ('ENTR_TRNO', 'DELIVERED', 'REQ_CNCL_DLVY', 'CANCELLED')
+			AND TO_CHAR(ARVL_PREARNGE_DT ,'YYYYMMDD') BETWEEN TO_CHAR(SYSDATE -15 ,'YYYYMMDD') AND TO_CHAR(SYSDATE +15 ,'YYYYMMDD') 
+			AND (#{mobile} IS NULL OR  REPLACE(CRYPTO_AES128.DEC_AES(DLVY_MOBILE,'lms_table_key1!^'),'-','') = REPLACE(#{mobile},'-',''))
+			AND DLVY_ENTRPS_CD = #{dlvyEntrpsCd}
+			AND DLVY_ENTRPS_CD IN (SELECT A.DLVY_ENTRPS_CD 
+										   FROM TB_LM_DLVY_ENTRPS_MST A
+										   WHERE A.DLVY_ENTRPS_TYPE = 'FRANCHISE')) AS RIGHT_CNT
+		,(SELECT COUNT(*)
+			FROM TB_LM_ONL_ODR_LST
+			WHERE 1=1
+			AND ODR_STTUS_CD IN  ('DELIVERED', 'CANCELLED')
+			AND TO_CHAR(ARVL_PREARNGE_DT ,'YYYYMMDD') BETWEEN TO_CHAR(SYSDATE -15 ,'YYYYMMDD') AND TO_CHAR(SYSDATE +15 ,'YYYYMMDD') 
+			AND (#{mobile} IS NULL OR  REPLACE(CRYPTO_AES128.DEC_AES(DLVY_MOBILE,'lms_table_key1!^'),'-','') = REPLACE(#{mobile},'-',''))
+			AND DLVY_ENTRPS_CD = #{dlvyEntrpsCd}
+			AND DLVY_ENTRPS_CD IN (SELECT A.DLVY_ENTRPS_CD 
+										   FROM TB_LM_DLVY_ENTRPS_MST A
+										   WHERE A.DLVY_ENTRPS_TYPE = 'FRANCHISE')) AS LEFT_CNT
+		,(SELECT COUNT(*)
+			FROM TB_LM_ONL_ODR_LST
+			WHERE 1=1
+			AND ODR_STTUS_CD IN  ('ENTR_TRNO')
+			AND TO_CHAR(ARVL_PREARNGE_DT ,'YYYYMMDD') BETWEEN TO_CHAR(SYSDATE -15 ,'YYYYMMDD') AND TO_CHAR(SYSDATE +15 ,'YYYYMMDD') 
+			AND (#{mobile} IS NULL OR  REPLACE(CRYPTO_AES128.DEC_AES(DLVY_MOBILE,'lms_table_key1!^'),'-','') = REPLACE(#{mobile},'-',''))
+			AND DLVY_ENTRPS_CD = #{dlvyEntrpsCd}
+			AND DLVY_ENTRPS_CD IN (SELECT A.DLVY_ENTRPS_CD 
+										   FROM TB_LM_DLVY_ENTRPS_MST A
+										   WHERE A.DLVY_ENTRPS_TYPE = 'FRANCHISE')) AS NOT_PROCESS_CNT
+		,(SELECT COUNT(*)
+			FROM TB_LM_ONL_ODR_LST
+			WHERE 1=1
+			AND ODR_STTUS_CD IN  ('REQ_CNCL_DLVY')
+		    AND TO_CHAR(ARVL_PREARNGE_DT ,'YYYYMMDD') BETWEEN TO_CHAR(SYSDATE -15 ,'YYYYMMDD') AND TO_CHAR(SYSDATE +15 ,'YYYYMMDD') 
+			AND (#{mobile} IS NULL OR  REPLACE(CRYPTO_AES128.DEC_AES(DLVY_MOBILE,'lms_table_key1!^'),'-','') = REPLACE(#{mobile},'-',''))
+			AND DLVY_ENTRPS_CD = #{dlvyEntrpsCd}
+			AND DLVY_ENTRPS_CD IN (SELECT A.DLVY_ENTRPS_CD 
+										   FROM TB_LM_DLVY_ENTRPS_MST A
+										   WHERE A.DLVY_ENTRPS_TYPE = 'FRANCHISE')) AS REQ_CNCL_DLVY_CNT
+							
+		FROM DUAL ) RN
+		]]>
+  	 </select>
+
+  	 
+  	 <select id="new_select" resultType="hashmap">
+		<![CDATA[
+			SELECT A.CD, 
+			    CASE WHEN COUNT(C.ODR_STTUS_CD) > 99 THEN '99+' 
+			    ELSE TO_CHAR(COUNT(C.ODR_STTUS_CD)) END AS CNT
+			FROM (SELECT GRP_CD, CD FROM TB_LM_COMMON_CD WHERE GRP_CD ='ODR_STTUS_CD') A  
+			LEFT JOIN (SELECT * 
+			            FROM TB_LM_ONL_ODR_LST B 
+			            WHERE ODR_TYPE = 'PULMUONE' 
+						  	AND DLVY_ENTRPS_CD = #{dlvyEntrpsCd} 
+			                AND TO_CHAR(NVL(B.UDT_DT,B.REG_DT),'YYYYMMDD') = TO_CHAR(SYSDATE,'YYYYMMDD')
+			                AND TO_CHAR(B.UDT_DT,'YYYYMMDDHH24MISS') > #{timeDetail}
+			                AND (#{mobile} is null OR REPLACE(CRYPTO_AES128.DEC_AES(B.DLVY_MOBILE,'lms_table_key1!^'),'-','') = REPLACE(#{mobile},'-','') )
+			            ) C                                                                                 
+			ON A.CD = C.ODR_STTUS_CD   
+			GROUP BY A.CD
+			
+			
+	   	]]>
+	</select>
+	
+	
+	
+	<select id="notiOneSelect" resultType="hashmap">
+		<![CDATA[
+		SELECT AA.NOTICE_SJ, AA.NOTICE_SEQ
+
+			FROM 	(SELECT	a.NOTICE_SJ,a.NOTICE_SEQ,ROWNUM AS row_seq
+					 FROM	TB_LM_NOTICE_MST a
+					 WHERE 1 = 1
+						AND to_char(sysdate, 'YYYYMMDD') BETWEEN TO_CHAR(DISP_START_DT_TM, 'YYYYMMDD') 
+						AND TO_CHAR(DISP_END_DT_TM, 'YYYYMMDD')
+					 ORDER BY NOTICE_SEQ DESC)AA
+			WHERE AA.row_seq = 1
+	   	]]>
+	</select>
+	
+	<select id="cashTotalSelect" resultType="hashmap">
+		<![CDATA[
+			SELECT 
+				NVL(TO_CHAR( SUM(TOTAL.CNT_FEE), 'FM999,999,999,999'),'0' )AS TOTAL_CNT 
+			FROM 
+			(SELECT 
+				 odr.MALL_ITEM_CD
+				,odr.odr_cnt
+				,odr.odr_cnt * mst.FEE  AS CNT_FEE
+				FROM  (SELECT  MALL_ITEM_CD, SUM(CNT) AS odr_cnt
+					 	FROM TB_LM_ONL_ODR_LST
+						WHERE ODR_STTUS_CD IN  ('DELIVERED') AND TO_CHAR(ARVL_PREARNGE_DT ,'YYYYMM') =  TO_CHAR(SYSDATE,'YYYYMM') 
+					 		AND DLVY_ENTRPS_CD = #{dlvyEntrpsCd} 	AND DLVY_ENTRPS_CD IN (SELECT A.DLVY_ENTRPS_CD FROM TB_LM_DLVY_ENTRPS_MST A	WHERE A.DLVY_ENTRPS_TYPE = 'FRANCHISE')
+					 	GROUP BY MALL_ITEM_CD) odr
+				INNER JOIN TB_LM_ITEM_MST mst
+				ON odr.MALL_ITEM_CD  = mst.MALL_ITEM_CD )TOTAL
+	   	]]>
+	</select>
+
+</mapper>

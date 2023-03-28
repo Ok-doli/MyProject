@@ -1,0 +1,89 @@
+userve: 
+    project-version: 1.0.0
+    chatting-mode: user
+spring: 
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  profiles: 
+    active: real
+  mvc: 
+    view: 
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  devtools: 
+    livereload: 
+      enabled: true
+    restart: 
+      enabled: true
+  security:
+    user:
+      name: <>
+      password: <>
+  resources:
+    cache:
+      cachecontrol:
+        max-age: 2592000 #one month
+    chain:
+      strategy:
+        content:
+          enabled: true
+          paths: /**
+          
+log:
+  isPrintLog : true
+
+
+server: 
+  tomcat: 
+    uri-encoding: UTF-8
+  servlet:
+    jsp:
+      init-parameters: 
+        development: true
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript
+    min-response-size: 2048
+        
+management:
+  endpoints:
+    web:
+      exposure:
+        include: heapdump,liquibase,loggers,prometheus,threaddump,info,metrics,health
+  health:
+    db:
+      enabled: true
+    defaults:
+      enabled: true
+    diskspace:
+      enabled: true
+  
+
+# real
+---
+spring:
+  profiles: real
+  datasource-org: 
+   hikari:
+    url: jdbc:mariadb://codingtest.brique.kr:3306/employees
+    username: codingtest
+    password: 12brique!@
+    driver-class-name: org.mariadb.jdbc.Driver
+    
+#  datasource-talk: 
+#   hikari: 
+#    driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+#    jdbc-url: jdbc:log4jdbc:oracle:thin:@10.21.11.32:1539/LMSPROD
+#    username: 
+#    password: 
+#  session:
+#      enabled: false
+
+server: 
+  port: 9990
+
+
+
+  

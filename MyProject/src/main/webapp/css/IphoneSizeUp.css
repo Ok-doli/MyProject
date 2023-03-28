@@ -1,0 +1,228 @@
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .i_font_6px {
+        font-size: 1.2rem !important;
+    }
+    .i_font_7px {
+        font-size: 1.3rem !important;
+    }
+    .i_font_8px {
+        font-size: 1.4rem !important;
+    }
+    .i_font_9px {
+        font-size: 1.5rem !important;
+    }
+    .i_font_10px {
+        font-size: 1.6rem !important;
+    }
+    .i_font_11px {
+        font-size: 1.7rem !important;
+    }
+    .i_font_12px {
+        font-size: 1.8rem !important;
+    }
+    .i_font_13px {
+        font-size: 1.9rem !important;
+    }
+    .i_font_14px {
+        font-size: 2.0rem !important;
+    }
+    .i_font_15px {
+        font-size: 2.1rem !important;
+    }
+    .i_font_16px {
+        font-size: 2.2rem !important;
+    }
+    .i_font_17px {
+        font-size: 2.3rem !important;
+    }
+    .i_font_18px {
+        font-size: 2.4rem !important;
+    }
+    .i_font_19px {
+        font-size: 2.5rem !important;
+    }
+    .i_font_20px {
+        font-size: 2.6rem !important;
+    }
+    .i_font_21px {
+        font-size: 2.7rem !important;
+    }
+    .i_font_22px {
+        font-size: 2.8rem !important;
+    }
+    .i_font_23px {
+        font-size: 2.9rem !important;
+    }
+    .i_font_24px {
+        font-size: 3.0rem !important;
+    }
+    .i_font_25px {
+        font-size: 3.1rem !important;
+    }
+    .i_font_26px {
+        font-size: 3.2rem !important;
+    }
+    .i_font_27px {
+        font-size: 3.3rem !important;
+    }
+    .i_font_28px {
+        font-size: 3.4rem !important;
+    }
+
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+##Device = 占쏙옙�겫占썽겫袁⑹벥 占쎈뮞筌띾뜇�뱜占쎈？ 筌뤴뫀而�占쎌뵬 疫꿸퀗由�(占쎄쉭嚥∽옙)
+##Screen = 320px占쎈퓠占쎄퐣 479px 占쎄텢占쎌뵠
+*/
+
+@media (min-width: 377px) and (max-width: 480px) {
+	.i_font_6px {
+        font-size: 0.6rem !important;
+    }
+    .i_font_7px {
+        font-size: 0.7rem !important;
+    }
+    .i_font_8px {
+        font-size: 0.8rem 
+    }
+    .i_font_9px {
+        font-size: 0.9rem !important;
+    }
+    .i_font_10px {
+        font-size: 1.0rem !important;
+    }
+    .i_font_11px {
+        font-size: 1.1rem !important;
+    }
+    .i_font_12px {
+        font-size: 1.2rem !important;
+    }
+    .i_font_13px {
+        font-size: 1.3rem !important;
+    }
+    .i_font_14px {
+        font-size: 1.4rem !important;
+    }
+    .i_font_15px {
+        font-size: 1.5rem !important;
+    }
+    .i_font_16px {
+        font-size: 1.6rem !important;
+    }
+    .i_font_17px {
+        font-size: 1.7rem !important;
+    }
+    .i_font_18px {
+        font-size: 1.8rem !important;
+    }
+    .i_font_19px {
+        font-size: 1.9rem !important;
+    }
+    .i_font_20px {
+        font-size: 2.0rem !important;
+    }
+    .i_font_21px {
+        font-size: 2.1rem !important;
+    }
+    .i_font_22px {
+        font-size: 2.2rem !important;
+    }
+    .i_font_23px {
+        font-size: 2.3rem !important;
+    }
+    .i_font_24px {
+        font-size: 2.4rem !important;
+    }
+
+    .i_font_25px {
+        font-size: 2.5rem !important;
+    }
+
+    .i_font_26px {
+        font-size: 2.6rem !important;
+    }
+    .i_font_27px {
+        font-size: 2.7rem !important;
+    }
+    .i_font_28px {
+        font-size: 2.8rem !important;
+    }
+
+}
+
+@media (min-width: 340px) and (max-width: 376px) {
+	.i_font_6px {
+        font-size: 0.5rem !important;
+    }
+    .i_font_7px {
+        font-size: 0.6rem !important;
+    }
+    .i_font_8px {
+        font-size: 0.7rem !important;
+    }
+    .i_font_9px {
+        font-size: 0.8rem !important;
+    }
+    .i_font_10px {
+        font-size: 0.9rem !important;
+    }
+    .i_font_11px {
+        font-size: 1rem !important;
+    }
+    .i_font_12px {
+        font-size: 1.1rem !important;
+    }
+    .i_font_13px {
+        font-size: 1.2rem !important;
+    }
+    .i_font_14px {
+        font-size: 1.3rem !important;
+    }
+    .i_font_15px {
+        font-size: 1.4rem !important;
+    }
+    .i_font_16px {
+        font-size: 1.5rem !important;
+    }
+    .i_font_17px {
+        font-size: 1.6rem !important;
+    }
+    .i_font_18px {
+        font-size: 1.7rem !important;
+    }
+    .i_font_19px {
+        font-size: 1.8rem !important;
+    }
+    .i_font_20px {
+        font-size: 1.9rem !important;
+    }
+    .i_font_21px {
+        font-size: 2rem !important;
+    }
+    .i_font_22px {
+        font-size: 2.1rem !important;
+    }
+    .i_font_23px {
+        font-size: 2.2rem !important;
+    }
+    .i_font_24px {
+        font-size: 2.3rem !important;
+    }
+    .i_font_25px {
+        font-size: 2.4rem !important;
+    }
+    .i_font_26px {
+        font-size: 2.5rem !important;
+    }
+    .i_font_27px {
+        font-size: 2.6rem !important;
+    }
+    .i_font_28px {
+        font-size: 2.7rem !important;
+    }
+
+}

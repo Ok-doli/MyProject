@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="Notice">
+	<resultMap id="NoticeMap" type="hashMap"></resultMap>
+  	
+	<select id="Select" resultType="hashmap">
+	   <![CDATA[
+	   
+	SELECT 
+		aa.*,
+		CASE WHEN 
+				UPPER(SUBSTR(aa.FILE_DISP_NM1 , INSTR(aa.FILE_DISP_NM1, '.') + 1))
+				IN ('JPG','JPEG','PNG','GIF','BMP')
+				THEN 'Y'
+				END AS FILE_DISP_NM1_YN,
+	
+		CASE WHEN 	
+				UPPER(SUBSTR(aa.FILE_DISP_NM2 , INSTR(aa.FILE_DISP_NM2, '.') + 1))
+				IN ('JPG','JPEG','PNG','GIF','BMP')
+				THEN 'Y'
+				END AS FILE_DISP_NM2_YN,
+		CASE WHEN 
+				UPPER(SUBSTR(aa.FILE_DISP_NM3 , INSTR(aa.FILE_DISP_NM3, '.') + 1))
+				IN ('JPG','JPEG','PNG','GIF','BMP')
+				THEN 'Y'
+				END AS FILE_DISP_NM3_YN,
+		
+		CASE WHEN 
+				UPPER(SUBSTR(aa.FILE_DISP_NM4 , INSTR(aa.FILE_DISP_NM4, '.') + 1))
+				IN ('JPG','JPEG','PNG','GIF','BMP')
+				THEN 'Y'
+				END AS FILE_DISP_NM4_YN,
+		CASE WHEN 
+				UPPER(SUBSTR(aa.FILE_DISP_NM5 , INSTR(aa.FILE_DISP_NM5, '.') + 1))
+				IN ('JPG','JPEG','PNG','GIF','BMP')
+				THEN 'Y'
+				END AS FILE_DISP_NM5_YN
+	FROM 
+	
+	
+	(
+	SELECT * FROM
+		(
+            SELECT
+            	   B.NOTICE_SEQ,
+	               to_char(B.DISP_START_DT_TM, 'YYYY-MM-DD') AS reg_dt,
+	               to_char(B.DISP_END_DT_TM, 'YYYY-MM-DD') AS udt_dt,
+	               to_char(NVL(B.UDT_DT,B.REG_DT), 'YYYY-MM-DD') AS show_dt,
+	               B.NOTICE_SJ,
+	               B.NOTICE_CN as content,
+	               ROWNUM AS RNUM,
+	               B.ATCHMNFL_FILE_PATH1 AS FILE_PATH1,
+	               B.ATCHMNFL_FILE_PATH2 AS FILE_PATH2,
+	               B.ATCHMNFL_FILE_PATH3 AS FILE_PATH3,
+	               B.ATCHMNFL_FILE_PATH4 AS FILE_PATH4,
+	               B.ATCHMNFL_FILE_PATH5 AS FILE_PATH5,
+	               UPPER(B.ATCHMNFL_FILE_DISP_NM1) AS FILE_DISP_NM1,
+	               UPPER(B.ATCHMNFL_FILE_DISP_NM2) AS FILE_DISP_NM2,
+	               UPPER(B.ATCHMNFL_FILE_DISP_NM3) AS FILE_DISP_NM3,
+	               UPPER(B.ATCHMNFL_FILE_DISP_NM4) AS FILE_DISP_NM4,
+	               UPPER(B.ATCHMNFL_FILE_DISP_NM5) AS FILE_DISP_NM5,
+	              
+	               (SELECT
+	               	COUNT(*) FROM TB_LM_NOTICE_MST
+					      WHERE 1=1
+					      AND to_char(sysdate,'YYYYMMDD') BETWEEN TO_CHAR(DISP_START_DT_TM,'YYYYMMDD') AND TO_CHAR(DISP_END_DT_TM,'YYYYMMDD')
+	                 ) AS TOT_COUNT
+	          FROM (SELECT
+	          		* FROM TB_LM_NOTICE_MST a
+					      WHERE 1=1
+					      AND to_char(sysdate,'YYYYMMDD') BETWEEN TO_CHAR(DISP_START_DT_TM,'YYYYMMDD') AND TO_CHAR(DISP_END_DT_TM,'YYYYMMDD')
+					     ORDER BY NOTICE_SEQ DESC) B
+	           WHERE 1=1
+	           AND ROWNUM <= ((NVL(#{pageNumber},1))*NVL(#{pageSize},20))
+ 	)
+	         WHERE 1 = 1
+	           AND RNUM >= ((NVL(#{pageNumber},1)-1)*NVL(#{pageSize},20))+1	) aa
+     
+	   ]]>
+	</select>
+	
+
+</mapper>

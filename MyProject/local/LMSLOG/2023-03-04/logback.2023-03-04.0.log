@@ -1,0 +1,727 @@
+[2023-03-04 00:11:11] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.shutdown] - Shutting down ExecutorService 'taskScheduler' 
+[2023-03-04 00:11:11] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:11:11] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 13080 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:11:11] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:11:12] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:11:12] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:11:12] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:11:12] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:11:12] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:11:13] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:11:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:11:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 1161 ms 
+[2023-03-04 00:11:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3856241f, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f1014a7, org.springframework.security.web.header.HeaderWriterFilter@6679880, org.springframework.security.web.authentication.logout.LogoutFilter@26c6da0f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@683421, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3af10f34, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d52826d, org.springframework.security.web.session.SessionManagementFilter@41fe4c11, org.springframework.security.web.access.ExceptionTranslationFilter@1147c216, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e505a64] 
+[2023-03-04 00:11:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:11:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.initialize] - Initializing ExecutorService 'taskScheduler' 
+[2023-03-04 00:11:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.OptionalLiveReloadServer.startServer] - LiveReload server is running on port 35729 
+[2023-03-04 00:11:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.e.web.EndpointLinksResolver.<init>] - Exposing 6 endpoint(s) beneath base path '/actuator' 
+[2023-03-04 00:11:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Starting ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:11:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.start] - Tomcat started on port(s): 9990 (http) with context path '' 
+[2023-03-04 00:11:13] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarted] - Started MyProjectApplication in 1.788 seconds (JVM running for 1391.969) 
+[2023-03-04 00:11:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent] - Condition evaluation unchanged 
+[2023-03-04 00:11:58] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown] - Application shutdown requested. 
+[2023-03-04 00:11:59] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.shutdown] - Shutting down ExecutorService 'taskScheduler' 
+[2023-03-04 00:11:59] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:11:59] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 13080 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:11:59] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:12:00] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:12:00] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:12:00] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:12:00] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:12:00] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:12:00] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:12:00] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:12:00] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 948 ms 
+[2023-03-04 00:12:00] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cb74e6b, org.springframework.security.web.context.SecurityContextPersistenceFilter@dbb0b07, org.springframework.security.web.header.HeaderWriterFilter@30107206, org.springframework.security.web.authentication.logout.LogoutFilter@594f25c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57573a63, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6464e2cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5bc4fd77, org.springframework.security.web.session.SessionManagementFilter@178fff52, org.springframework.security.web.access.ExceptionTranslationFilter@5f40aed5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@174cdccd] 
+[2023-03-04 00:12:01] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:12:01] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.initialize] - Initializing ExecutorService 'taskScheduler' 
+[2023-03-04 00:12:01] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.OptionalLiveReloadServer.startServer] - LiveReload server is running on port 35729 
+[2023-03-04 00:12:01] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.e.web.EndpointLinksResolver.<init>] - Exposing 6 endpoint(s) beneath base path '/actuator' 
+[2023-03-04 00:12:01] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Starting ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:12:01] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.start] - Tomcat started on port(s): 9990 (http) with context path '' 
+[2023-03-04 00:12:01] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarted] - Started MyProjectApplication in 1.529 seconds (JVM running for 1439.599) 
+[2023-03-04 00:12:01] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent] - Condition evaluation unchanged 
+[2023-03-04 00:12:04] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2023-03-04 00:12:04] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Initializing Servlet 'dispatcherServlet' 
+[2023-03-04 00:12:04] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Completed initialization in 9 ms 
+[2023-03-04 00:12:19] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 4748 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:12:19] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:12:19] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.restart.ChangeableUrls.logTo] - The Class-Path manifest attribute in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\src\main\webapp\WEB-INF\lib\ojdbc8-19.10.0.0.jar referenced one or more files that do not exist: file:/C:/Users/kl405/Documents/workspace-spring-tool-suite-4-4.13.0.RELEASE/MyProject/src/main/webapp/WEB-INF/lib/oraclepki.jar 
+[2023-03-04 00:12:19] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+[2023-03-04 00:12:19] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+[2023-03-04 00:12:20] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:12:21] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:12:21] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:12:21] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:12:21] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:12:22] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:12:22] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:12:22] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 2912 ms 
+[2023-03-04 00:12:23] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58594f66, org.springframework.security.web.context.SecurityContextPersistenceFilter@117bc752, org.springframework.security.web.header.HeaderWriterFilter@4fc6e2fc, org.springframework.security.web.authentication.logout.LogoutFilter@357ed439, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@af43cf1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6cdfca2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e3db6b0, org.springframework.security.web.session.SessionManagementFilter@4f562260, org.springframework.security.web.access.ExceptionTranslationFilter@53fa76d5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45985e02] 
+[2023-03-04 00:12:23] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:12:23] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.initialize] - Initializing ExecutorService 'taskScheduler' 
+[2023-03-04 00:12:24] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.OptionalLiveReloadServer.startServer] - LiveReload server is running on port 35729 
+[2023-03-04 00:12:24] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.e.web.EndpointLinksResolver.<init>] - Exposing 6 endpoint(s) beneath base path '/actuator' 
+[2023-03-04 00:12:24] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Starting ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:12:24] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.start] - Tomcat started on port(s): 9990 (http) with context path '' 
+[2023-03-04 00:12:24] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarted] - Started MyProjectApplication in 5.618 seconds (JVM running for 8.671) 
+[2023-03-04 00:12:24] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2023-03-04 00:12:24] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Initializing Servlet 'dispatcherServlet' 
+[2023-03-04 00:12:24] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Completed initialization in 9 ms 
+[2023-03-04 00:12:31] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.shutdown] - Shutting down ExecutorService 'taskScheduler' 
+[2023-03-04 00:12:31] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:12:31] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 4748 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:12:31] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:12:31] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 993 ms 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e6f1e6a, org.springframework.security.web.context.SecurityContextPersistenceFilter@3f3243c, org.springframework.security.web.header.HeaderWriterFilter@108db7df, org.springframework.security.web.authentication.logout.LogoutFilter@75357fb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ebadff0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5374b6b7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b1cee90, org.springframework.security.web.session.SessionManagementFilter@9d8ef36, org.springframework.security.web.access.ExceptionTranslationFilter@465d673d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5361ba05] 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.initialize] - Initializing ExecutorService 'taskScheduler' 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.OptionalLiveReloadServer.startServer] - LiveReload server is running on port 35729 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.e.web.EndpointLinksResolver.<init>] - Exposing 6 endpoint(s) beneath base path '/actuator' 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Starting ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.start] - Tomcat started on port(s): 9990 (http) with context path '' 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarted] - Started MyProjectApplication in 1.668 seconds (JVM running for 17.357) 
+[2023-03-04 00:12:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent] - Condition evaluation unchanged 
+[2023-03-04 00:12:47] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2023-03-04 00:12:47] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Initializing Servlet 'dispatcherServlet' 
+[2023-03-04 00:12:47] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Completed initialization in 3 ms 
+[2023-03-04 00:13:21] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown] - Application shutdown requested. 
+[2023-03-04 00:13:22] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.shutdown] - Shutting down ExecutorService 'taskScheduler' 
+[2023-03-04 00:13:22] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:13:27] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 11876 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:13:27] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:13:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.restart.ChangeableUrls.logTo] - The Class-Path manifest attribute in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\src\main\webapp\WEB-INF\lib\ojdbc8-19.10.0.0.jar referenced one or more files that do not exist: file:/C:/Users/kl405/Documents/workspace-spring-tool-suite-4-4.13.0.RELEASE/MyProject/src/main/webapp/WEB-INF/lib/oraclepki.jar 
+[2023-03-04 00:13:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+[2023-03-04 00:13:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+[2023-03-04 00:13:28] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:13:29] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:13:29] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:13:29] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:13:29] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:13:30] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:13:30] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:13:30] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 2885 ms 
+[2023-03-04 00:13:31] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76acca33, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c1211ad, org.springframework.security.web.header.HeaderWriterFilter@8d8f130, org.springframework.security.web.authentication.logout.LogoutFilter@64da16f5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f747594, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6cea1a2c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42604002, org.springframework.security.web.session.SessionManagementFilter@17b5f328, org.springframework.security.web.access.ExceptionTranslationFilter@2b4fff36, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@76cda3ad] 
+[2023-03-04 00:13:31] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:13:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.initialize] - Initializing ExecutorService 'taskScheduler' 
+[2023-03-04 00:13:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.OptionalLiveReloadServer.startServer] - LiveReload server is running on port 35729 
+[2023-03-04 00:13:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.e.web.EndpointLinksResolver.<init>] - Exposing 6 endpoint(s) beneath base path '/actuator' 
+[2023-03-04 00:13:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2023-03-04 00:13:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Initializing Servlet 'dispatcherServlet' 
+[2023-03-04 00:13:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Starting ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:13:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Completed initialization in 11 ms 
+[2023-03-04 00:13:32] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.start] - Tomcat started on port(s): 9990 (http) with context path '' 
+[2023-03-04 00:13:32] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarted] - Started MyProjectApplication in 5.573 seconds (JVM running for 8.431) 
+[2023-03-04 00:13:49] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.shutdown] - Shutting down ExecutorService 'taskScheduler' 
+[2023-03-04 00:13:49] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:13:49] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 11876 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:13:49] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:13:49] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 1055 ms 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d421b96, org.springframework.security.web.context.SecurityContextPersistenceFilter@27932c2, org.springframework.security.web.header.HeaderWriterFilter@415279e2, org.springframework.security.web.authentication.logout.LogoutFilter@3bfbbfbe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f9ebfb0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6dd15cc8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1dcdc65f, org.springframework.security.web.session.SessionManagementFilter@26a76699, org.springframework.security.web.access.ExceptionTranslationFilter@116587ea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b547026] 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.initialize] - Initializing ExecutorService 'taskScheduler' 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.OptionalLiveReloadServer.startServer] - LiveReload server is running on port 35729 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.e.web.EndpointLinksResolver.<init>] - Exposing 6 endpoint(s) beneath base path '/actuator' 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Starting ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.start] - Tomcat started on port(s): 9990 (http) with context path '' 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarted] - Started MyProjectApplication in 1.629 seconds (JVM running for 27.089) 
+[2023-03-04 00:13:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent] - Condition evaluation unchanged 
+[2023-03-04 00:15:39] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2023-03-04 00:15:39] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Initializing Servlet 'dispatcherServlet' 
+[2023-03-04 00:15:39] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Completed initialization in 4 ms 
+[2023-03-04 00:15:55] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown] - Application shutdown requested. 
+[2023-03-04 00:15:56] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.shutdown] - Shutting down ExecutorService 'taskScheduler' 
+[2023-03-04 00:15:56] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:15:57] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 11876 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:15:57] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:15:57] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:15:57] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:15:57] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:15:57] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:15:57] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:15:58] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:15:58] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:15:58] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 812 ms 
+[2023-03-04 00:15:58] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46fb1d23, org.springframework.security.web.context.SecurityContextPersistenceFilter@637b1267, org.springframework.security.web.header.HeaderWriterFilter@5c07ed50, org.springframework.security.web.authentication.logout.LogoutFilter@1ef07b55, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1657326f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75d93098, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19b175ec, org.springframework.security.web.session.SessionManagementFilter@6ce789b6, org.springframework.security.web.access.ExceptionTranslationFilter@7a71e512, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28bb200c] 
+[2023-03-04 00:15:58] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:15:58] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.initialize] - Initializing ExecutorService 'taskScheduler' 
+[2023-03-04 00:15:58] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.OptionalLiveReloadServer.startServer] - LiveReload server is running on port 35729 
+[2023-03-04 00:15:58] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.e.web.EndpointLinksResolver.<init>] - Exposing 6 endpoint(s) beneath base path '/actuator' 
+[2023-03-04 00:15:58] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Starting ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:15:58] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.start] - Tomcat started on port(s): 9990 (http) with context path '' 
+[2023-03-04 00:15:58] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarted] - Started MyProjectApplication in 1.329 seconds (JVM running for 154.701) 
+[2023-03-04 00:15:58] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent] - Condition evaluation unchanged 
+[2023-03-04 00:16:15] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 14140 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:16:15] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:16:15] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.restart.ChangeableUrls.logTo] - The Class-Path manifest attribute in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\src\main\webapp\WEB-INF\lib\ojdbc8-19.10.0.0.jar referenced one or more files that do not exist: file:/C:/Users/kl405/Documents/workspace-spring-tool-suite-4-4.13.0.RELEASE/MyProject/src/main/webapp/WEB-INF/lib/oraclepki.jar 
+[2023-03-04 00:16:15] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+[2023-03-04 00:16:15] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+[2023-03-04 00:16:16] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:16:17] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:16:17] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:16:17] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:16:17] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:16:18] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:16:18] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:16:18] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 2507 ms 
+[2023-03-04 00:16:19] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c786f46, org.springframework.security.web.context.SecurityContextPersistenceFilter@7812566d, org.springframework.security.web.header.HeaderWriterFilter@31196505, org.springframework.security.web.authentication.logout.LogoutFilter@51da8ee5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46d643e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32c9011d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47b6dbd8, org.springframework.security.web.session.SessionManagementFilter@303d95ca, org.springframework.security.web.access.ExceptionTranslationFilter@5691522d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4a6fac99] 
+[2023-03-04 00:16:19] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:16:19] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.initialize] - Initializing ExecutorService 'taskScheduler' 
+[2023-03-04 00:16:19] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.OptionalLiveReloadServer.startServer] - LiveReload server is running on port 35729 
+[2023-03-04 00:16:19] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.e.web.EndpointLinksResolver.<init>] - Exposing 6 endpoint(s) beneath base path '/actuator' 
+[2023-03-04 00:16:19] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2023-03-04 00:16:19] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Initializing Servlet 'dispatcherServlet' 
+[2023-03-04 00:16:19] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Starting ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:16:19] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Completed initialization in 8 ms 
+[2023-03-04 00:16:19] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.start] - Tomcat started on port(s): 9990 (http) with context path '' 
+[2023-03-04 00:16:19] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarted] - Started MyProjectApplication in 4.702 seconds (JVM running for 7.218) 
+[2023-03-04 00:16:38] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.shutdown] - Shutting down ExecutorService 'taskScheduler' 
+[2023-03-04 00:16:38] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:16:38] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 14140 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:16:38] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:16:39] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 1408 ms 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e4f0e67, org.springframework.security.web.context.SecurityContextPersistenceFilter@6187f321, org.springframework.security.web.header.HeaderWriterFilter@20a428ee, org.springframework.security.web.authentication.logout.LogoutFilter@11d22046, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b517cb1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a33c46d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d487996, org.springframework.security.web.session.SessionManagementFilter@3c8d3f2a, org.springframework.security.web.access.ExceptionTranslationFilter@7810578f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5c9a5867] 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.initialize] - Initializing ExecutorService 'taskScheduler' 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.OptionalLiveReloadServer.startServer] - LiveReload server is running on port 35729 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.e.web.EndpointLinksResolver.<init>] - Exposing 6 endpoint(s) beneath base path '/actuator' 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Starting ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.start] - Tomcat started on port(s): 9990 (http) with context path '' 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarted] - Started MyProjectApplication in 2.032 seconds (JVM running for 28.219) 
+[2023-03-04 00:16:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent] - Condition evaluation unchanged 
+[2023-03-04 00:16:58] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2023-03-04 00:16:58] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Initializing Servlet 'dispatcherServlet' 
+[2023-03-04 00:16:58] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Completed initialization in 4 ms 
+[2023-03-04 00:21:34] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.shutdown] - Shutting down ExecutorService 'taskScheduler' 
+[2023-03-04 00:21:34] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:21:35] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 14140 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:21:35] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:21:35] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 1117 ms 
+[2023-03-04 00:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79d6e2f1, org.springframework.security.web.context.SecurityContextPersistenceFilter@100441a, org.springframework.security.web.header.HeaderWriterFilter@4d035bb1, org.springframework.security.web.authentication.logout.LogoutFilter@76bfe5c9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14dce035, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43d5efcc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@228f2583, org.springframework.security.web.session.SessionManagementFilter@907ff15, org.springframework.security.web.access.ExceptionTranslationFilter@6227d62, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77baf803] 
+[2023-03-04 00:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:21:36] [LAPTOP-A7QFO74C] [] [] [WARN] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'briqueController' method 
+MyProject.mobile.controller.briqueController#handleError(HttpServletRequest)
+to { /error}: There is already 'customErrorController' bean method
+MyProject.mobile.controller.CustomErrorController#handleError(HttpServletRequest) mapped. 
+[2023-03-04 00:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Stopping service [Tomcat] 
+[2023-03-04 00:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+[2023-03-04 00:21:36] [LAPTOP-A7QFO74C] [] [] [ERROR] [o.s.boot.SpringApplication.reportFailure] - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'briqueController' method 
+MyProject.mobile.controller.briqueController#handleError(HttpServletRequest)
+to { /error}: There is already 'customErrorController' bean method
+MyProject.mobile.controller.CustomErrorController#handleError(HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at MyProject.MyProjectApplication.main(MyProjectApplication.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'briqueController' method 
+MyProject.mobile.controller.briqueController#handleError(HttpServletRequest)
+to { /error}: There is already 'customErrorController' bean method
+MyProject.mobile.controller.CustomErrorController#handleError(HttpServletRequest) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:603)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:378)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 21 common frames omitted
+[2023-03-04 00:22:33] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 14140 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:22:33] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:22:33] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:22:34] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:22:34] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:22:34] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:22:34] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:22:34] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:22:34] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat-1].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:22:34] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 1084 ms 
+[2023-03-04 00:22:34] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e837a02, org.springframework.security.web.context.SecurityContextPersistenceFilter@788be253, org.springframework.security.web.header.HeaderWriterFilter@678409bd, org.springframework.security.web.authentication.logout.LogoutFilter@32df9300, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@305d42db, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77d36c8c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6529083b, org.springframework.security.web.session.SessionManagementFilter@68115833, org.springframework.security.web.access.ExceptionTranslationFilter@531371a8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54779a02] 
+[2023-03-04 00:22:34] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:22:34] [LAPTOP-A7QFO74C] [] [] [WARN] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'briqueController' method 
+MyProject.mobile.controller.briqueController#handleError(HttpServletRequest)
+to { /error}: There is already 'customErrorController' bean method
+MyProject.mobile.controller.CustomErrorController#handleError(HttpServletRequest) mapped. 
+[2023-03-04 00:22:34] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:22:34] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Stopping service [Tomcat] 
+[2023-03-04 00:22:34] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+[2023-03-04 00:22:34] [LAPTOP-A7QFO74C] [] [] [ERROR] [o.s.boot.SpringApplication.reportFailure] - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'briqueController' method 
+MyProject.mobile.controller.briqueController#handleError(HttpServletRequest)
+to { /error}: There is already 'customErrorController' bean method
+MyProject.mobile.controller.CustomErrorController#handleError(HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at MyProject.MyProjectApplication.main(MyProjectApplication.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'briqueController' method 
+MyProject.mobile.controller.briqueController#handleError(HttpServletRequest)
+to { /error}: There is already 'customErrorController' bean method
+MyProject.mobile.controller.CustomErrorController#handleError(HttpServletRequest) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:603)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:378)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 21 common frames omitted
+[2023-03-04 00:23:26] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 14140 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:23:26] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:23:26] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat-2].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 1113 ms 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c916ff9, org.springframework.security.web.context.SecurityContextPersistenceFilter@7cd19910, org.springframework.security.web.header.HeaderWriterFilter@4ad6f17, org.springframework.security.web.authentication.logout.LogoutFilter@251ce00e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38f5ad20, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57cfa8fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e98f0dc, org.springframework.security.web.session.SessionManagementFilter@72be10ce, org.springframework.security.web.access.ExceptionTranslationFilter@1afbc361, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2233024a] 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.initialize] - Initializing ExecutorService 'taskScheduler' 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.OptionalLiveReloadServer.startServer] - LiveReload server is running on port 35729 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.e.web.EndpointLinksResolver.<init>] - Exposing 6 endpoint(s) beneath base path '/actuator' 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Starting ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.start] - Tomcat started on port(s): 9990 (http) with context path '' 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarted] - Started MyProjectApplication in 1.712 seconds (JVM running for 435.245) 
+[2023-03-04 00:23:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent] - Condition evaluation unchanged 
+[2023-03-04 00:23:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.shutdown] - Shutting down ExecutorService 'taskScheduler' 
+[2023-03-04 00:23:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:23:40] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 14140 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:23:40] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:23:41] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:23:41] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:23:41] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:23:41] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:23:41] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:23:41] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:23:41] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat-2].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:23:41] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 1132 ms 
+[2023-03-04 00:23:41] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c87df3e, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e82098e, org.springframework.security.web.header.HeaderWriterFilter@263bedc7, org.springframework.security.web.authentication.logout.LogoutFilter@9f5f39, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a6682a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13ca1ff8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52837fe6, org.springframework.security.web.session.SessionManagementFilter@705baa68, org.springframework.security.web.access.ExceptionTranslationFilter@54d21e56, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@260ef6bf] 
+[2023-03-04 00:23:42] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:23:42] [LAPTOP-A7QFO74C] [] [] [WARN] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'mobileController' method 
+MyProject.mobile.controller.MobileController#myHome(HttpServletRequest, ModelMap)
+to { /}: There is already 'briqueController' bean method
+MyProject.mobile.controller.BriqueController#myHome(HttpServletRequest, ModelMap) mapped. 
+[2023-03-04 00:23:42] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:23:42] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Stopping service [Tomcat] 
+[2023-03-04 00:23:42] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+[2023-03-04 00:23:42] [LAPTOP-A7QFO74C] [] [] [ERROR] [o.s.boot.SpringApplication.reportFailure] - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'mobileController' method 
+MyProject.mobile.controller.MobileController#myHome(HttpServletRequest, ModelMap)
+to { /}: There is already 'briqueController' bean method
+MyProject.mobile.controller.BriqueController#myHome(HttpServletRequest, ModelMap) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at MyProject.MyProjectApplication.main(MyProjectApplication.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'mobileController' method 
+MyProject.mobile.controller.MobileController#myHome(HttpServletRequest, ModelMap)
+to { /}: There is already 'briqueController' bean method
+MyProject.mobile.controller.BriqueController#myHome(HttpServletRequest, ModelMap) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:603)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:378)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 21 common frames omitted
+[2023-03-04 00:27:12] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 14140 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:27:12] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:27:12] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:27:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:27:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:27:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:27:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:27:13] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:27:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat-3].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:27:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 1072 ms 
+[2023-03-04 00:27:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ae43187, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d6f9cd8, org.springframework.security.web.header.HeaderWriterFilter@3b4ca9ff, org.springframework.security.web.authentication.logout.LogoutFilter@443f769d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fd55458, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31881b0c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2fe988ed, org.springframework.security.web.session.SessionManagementFilter@1000896f, org.springframework.security.web.access.ExceptionTranslationFilter@5dd5f3ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@576a6581] 
+[2023-03-04 00:27:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:27:13] [LAPTOP-A7QFO74C] [] [] [WARN] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'mobileController' method 
+MyProject.mobile.controller.MobileController#postBriqueHome(HttpServletRequest, ModelMap)
+to { /BriqueHome.do}: There is already 'briqueController' bean method
+MyProject.mobile.controller.BriqueController#postBriqueHome(HttpServletRequest, ModelMap) mapped. 
+[2023-03-04 00:27:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:27:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Stopping service [Tomcat] 
+[2023-03-04 00:27:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+[2023-03-04 00:27:13] [LAPTOP-A7QFO74C] [] [] [ERROR] [o.s.boot.SpringApplication.reportFailure] - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'mobileController' method 
+MyProject.mobile.controller.MobileController#postBriqueHome(HttpServletRequest, ModelMap)
+to { /BriqueHome.do}: There is already 'briqueController' bean method
+MyProject.mobile.controller.BriqueController#postBriqueHome(HttpServletRequest, ModelMap) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at MyProject.MyProjectApplication.main(MyProjectApplication.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'mobileController' method 
+MyProject.mobile.controller.MobileController#postBriqueHome(HttpServletRequest, ModelMap)
+to { /BriqueHome.do}: There is already 'briqueController' bean method
+MyProject.mobile.controller.BriqueController#postBriqueHome(HttpServletRequest, ModelMap) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:603)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:378)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 21 common frames omitted
+[2023-03-04 00:27:47] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 3644 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:27:47] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:27:48] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.restart.ChangeableUrls.logTo] - The Class-Path manifest attribute in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\src\main\webapp\WEB-INF\lib\ojdbc8-19.10.0.0.jar referenced one or more files that do not exist: file:/C:/Users/kl405/Documents/workspace-spring-tool-suite-4-4.13.0.RELEASE/MyProject/src/main/webapp/WEB-INF/lib/oraclepki.jar 
+[2023-03-04 00:27:48] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+[2023-03-04 00:27:48] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+[2023-03-04 00:27:49] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:27:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:27:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:27:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:27:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:27:50] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:27:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:27:50] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 2840 ms 
+[2023-03-04 00:27:51] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66e43d64, org.springframework.security.web.context.SecurityContextPersistenceFilter@32c3427c, org.springframework.security.web.header.HeaderWriterFilter@506c8d62, org.springframework.security.web.authentication.logout.LogoutFilter@4e84ef7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cbea15c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@500f16b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75b1ae97, org.springframework.security.web.session.SessionManagementFilter@129c7e8f, org.springframework.security.web.access.ExceptionTranslationFilter@2ac8bf4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3edc723d] 
+[2023-03-04 00:27:52] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:27:52] [LAPTOP-A7QFO74C] [] [] [WARN] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'mobileController' method 
+MyProject.mobile.controller.MobileController#notice_Select(HttpServletRequest, HttpServletResponse)
+to {POST /notice_Select.do}: There is already 'briqueController' bean method
+MyProject.mobile.controller.BriqueController#notice_Select(HttpServletRequest, HttpServletResponse) mapped. 
+[2023-03-04 00:27:52] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:27:52] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Stopping service [Tomcat] 
+[2023-03-04 00:27:52] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+[2023-03-04 00:27:52] [LAPTOP-A7QFO74C] [] [] [ERROR] [o.s.boot.SpringApplication.reportFailure] - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'mobileController' method 
+MyProject.mobile.controller.MobileController#notice_Select(HttpServletRequest, HttpServletResponse)
+to {POST /notice_Select.do}: There is already 'briqueController' bean method
+MyProject.mobile.controller.BriqueController#notice_Select(HttpServletRequest, HttpServletResponse) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at MyProject.MyProjectApplication.main(MyProjectApplication.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'mobileController' method 
+MyProject.mobile.controller.MobileController#notice_Select(HttpServletRequest, HttpServletResponse)
+to {POST /notice_Select.do}: There is already 'briqueController' bean method
+MyProject.mobile.controller.BriqueController#notice_Select(HttpServletRequest, HttpServletResponse) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:603)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:378)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 21 common frames omitted
+[2023-03-04 00:29:09] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 10616 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:29:09] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:29:09] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.restart.ChangeableUrls.logTo] - The Class-Path manifest attribute in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\src\main\webapp\WEB-INF\lib\ojdbc8-19.10.0.0.jar referenced one or more files that do not exist: file:/C:/Users/kl405/Documents/workspace-spring-tool-suite-4-4.13.0.RELEASE/MyProject/src/main/webapp/WEB-INF/lib/oraclepki.jar 
+[2023-03-04 00:29:09] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+[2023-03-04 00:29:09] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+[2023-03-04 00:29:10] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:29:11] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:29:11] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:29:11] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:29:11] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:29:12] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:29:12] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:29:12] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 2720 ms 
+[2023-03-04 00:29:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75d8fdd, org.springframework.security.web.context.SecurityContextPersistenceFilter@165af87c, org.springframework.security.web.header.HeaderWriterFilter@7fcced65, org.springframework.security.web.authentication.logout.LogoutFilter@79c1f476, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7943621d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3fe3556a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c5496e0, org.springframework.security.web.session.SessionManagementFilter@70c15672, org.springframework.security.web.access.ExceptionTranslationFilter@3bda5eb4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f740e6c] 
+[2023-03-04 00:29:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:29:13] [LAPTOP-A7QFO74C] [] [] [WARN] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'mobileController' method 
+MyProject.mobile.controller.MobileController#postBriqueHome(HttpServletRequest, ModelMap)
+to { /BriqueHome.do}: There is already 'briqueController' bean method
+MyProject.mobile.controller.BriqueController#postBriqueHome(HttpServletRequest, ModelMap) mapped. 
+[2023-03-04 00:29:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:29:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Stopping service [Tomcat] 
+[2023-03-04 00:29:13] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+[2023-03-04 00:29:13] [LAPTOP-A7QFO74C] [] [] [ERROR] [o.s.boot.SpringApplication.reportFailure] - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'mobileController' method 
+MyProject.mobile.controller.MobileController#postBriqueHome(HttpServletRequest, ModelMap)
+to { /BriqueHome.do}: There is already 'briqueController' bean method
+MyProject.mobile.controller.BriqueController#postBriqueHome(HttpServletRequest, ModelMap) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at MyProject.MyProjectApplication.main(MyProjectApplication.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'mobileController' method 
+MyProject.mobile.controller.MobileController#postBriqueHome(HttpServletRequest, ModelMap)
+to { /BriqueHome.do}: There is already 'briqueController' bean method
+MyProject.mobile.controller.BriqueController#postBriqueHome(HttpServletRequest, ModelMap) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:603)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:378)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 21 common frames omitted
+[2023-03-04 00:29:23] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 8524 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:29:23] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:29:23] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.restart.ChangeableUrls.logTo] - The Class-Path manifest attribute in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\src\main\webapp\WEB-INF\lib\ojdbc8-19.10.0.0.jar referenced one or more files that do not exist: file:/C:/Users/kl405/Documents/workspace-spring-tool-suite-4-4.13.0.RELEASE/MyProject/src/main/webapp/WEB-INF/lib/oraclepki.jar 
+[2023-03-04 00:29:23] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+[2023-03-04 00:29:23] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+[2023-03-04 00:29:24] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:29:25] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:29:25] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:29:25] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:29:25] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:29:26] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:29:26] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:29:26] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 2511 ms 
+[2023-03-04 00:29:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7567a94f, org.springframework.security.web.context.SecurityContextPersistenceFilter@249d5a32, org.springframework.security.web.header.HeaderWriterFilter@ca8768d, org.springframework.security.web.authentication.logout.LogoutFilter@3fc07c87, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6700b3ba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68d06a20, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@333b0173, org.springframework.security.web.session.SessionManagementFilter@5c45a6d1, org.springframework.security.web.access.ExceptionTranslationFilter@3e9c45fb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@62c57a53] 
+[2023-03-04 00:29:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:29:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.initialize] - Initializing ExecutorService 'taskScheduler' 
+[2023-03-04 00:29:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.OptionalLiveReloadServer.startServer] - LiveReload server is running on port 35729 
+[2023-03-04 00:29:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.e.web.EndpointLinksResolver.<init>] - Exposing 6 endpoint(s) beneath base path '/actuator' 
+[2023-03-04 00:29:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Starting ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:29:27] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.start] - Tomcat started on port(s): 9990 (http) with context path '' 
+[2023-03-04 00:29:27] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarted] - Started MyProjectApplication in 5.105 seconds (JVM running for 7.958) 
+[2023-03-04 00:29:29] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2023-03-04 00:29:29] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Initializing Servlet 'dispatcherServlet' 
+[2023-03-04 00:29:29] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Completed initialization in 8 ms 
+[2023-03-04 00:57:55] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown] - Application shutdown requested. 
+[2023-03-04 00:57:57] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.shutdown] - Shutting down ExecutorService 'taskScheduler' 
+[2023-03-04 00:57:57] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:58:04] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 16048 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 00:58:04] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 00:58:04] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.restart.ChangeableUrls.logTo] - The Class-Path manifest attribute in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\src\main\webapp\WEB-INF\lib\ojdbc8-19.10.0.0.jar referenced one or more files that do not exist: file:/C:/Users/kl405/Documents/workspace-spring-tool-suite-4-4.13.0.RELEASE/MyProject/src/main/webapp/WEB-INF/lib/oraclepki.jar 
+[2023-03-04 00:58:04] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+[2023-03-04 00:58:04] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+[2023-03-04 00:58:05] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 00:58:06] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 00:58:06] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:58:06] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 00:58:06] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 00:58:07] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 00:58:07] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 00:58:07] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 3300 ms 
+[2023-03-04 00:58:08] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24746878, org.springframework.security.web.context.SecurityContextPersistenceFilter@1db7e9cf, org.springframework.security.web.header.HeaderWriterFilter@22bc00b, org.springframework.security.web.authentication.logout.LogoutFilter@280548cd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ad0f5a0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f62acf2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5522dace, org.springframework.security.web.session.SessionManagementFilter@2c2da5c6, org.springframework.security.web.access.ExceptionTranslationFilter@24db39cb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d49ebe4] 
+[2023-03-04 00:58:08] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 00:58:09] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.initialize] - Initializing ExecutorService 'taskScheduler' 
+[2023-03-04 00:58:09] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.OptionalLiveReloadServer.startServer] - LiveReload server is running on port 35729 
+[2023-03-04 00:58:09] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.e.web.EndpointLinksResolver.<init>] - Exposing 6 endpoint(s) beneath base path '/actuator' 
+[2023-03-04 00:58:09] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Starting ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 00:58:09] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.start] - Tomcat started on port(s): 9990 (http) with context path '' 
+[2023-03-04 00:58:09] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarted] - Started MyProjectApplication in 6.182 seconds (JVM running for 10.697) 
+[2023-03-04 00:58:10] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2023-03-04 00:58:10] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Initializing Servlet 'dispatcherServlet' 
+[2023-03-04 00:58:10] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Completed initialization in 10 ms 
+[2023-03-04 01:15:41] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown] - Application shutdown requested. 
+[2023-03-04 01:15:42] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.shutdown] - Shutting down ExecutorService 'taskScheduler' 
+[2023-03-04 01:15:42] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 01:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarting] - Starting MyProjectApplication on LAPTOP-A7QFO74C with PID 16640 (C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\target\classes started by kl405 in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject) 
+[2023-03-04 01:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStartupProfileInfo] - The following profiles are active: real 
+[2023-03-04 01:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.restart.ChangeableUrls.logTo] - The Class-Path manifest attribute in C:\Users\kl405\Documents\workspace-spring-tool-suite-4-4.13.0.RELEASE\MyProject\src\main\webapp\WEB-INF\lib\ojdbc8-19.10.0.0.jar referenced one or more files that do not exist: file:/C:/Users/kl405/Documents/workspace-spring-tool-suite-4-4.13.0.RELEASE/MyProject/src/main/webapp/WEB-INF/lib/oraclepki.jar 
+[2023-03-04 01:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+[2023-03-04 01:21:36] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+[2023-03-04 01:21:38] [LAPTOP-A7QFO74C] [] [] [WARN] [o.m.s.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[MyProject]' package. Please check your configuration. 
+[2023-03-04 01:21:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.initialize] - Tomcat initialized with port(s): 9990 (http) 
+[2023-03-04 01:21:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Initializing ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 01:21:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardService.log] - Starting service [Tomcat] 
+[2023-03-04 01:21:40] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.catalina.core.StandardEngine.log] - Starting Servlet engine: [Apache Tomcat/9.0.38] 
+[2023-03-04 01:21:41] [LAPTOP-A7QFO74C] [] [] [INFO] [org.apache.jasper.servlet.TldScanner.log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+[2023-03-04 01:21:41] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring embedded WebApplicationContext 
+[2023-03-04 01:21:41] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 4695 ms 
+[2023-03-04 01:21:42] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.web.DefaultSecurityFilterChain.<init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ed6a3fb, org.springframework.security.web.context.SecurityContextPersistenceFilter@661acb05, org.springframework.security.web.header.HeaderWriterFilter@8e396d7, org.springframework.security.web.authentication.logout.LogoutFilter@1ff1fdc4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cfb0f9f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2588f83a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29c66bcf, org.springframework.security.web.session.SessionManagementFilter@2e9ccf0, org.springframework.security.web.access.ExceptionTranslationFilter@57a3cad5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@19cb8ef7] 
+[2023-03-04 01:21:42] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.initialize] - Initializing ExecutorService 'applicationTaskExecutor' 
+[2023-03-04 01:21:42] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.initialize] - Initializing ExecutorService 'taskScheduler' 
+[2023-03-04 01:21:42] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.d.a.OptionalLiveReloadServer.startServer] - LiveReload server is running on port 35729 
+[2023-03-04 01:21:42] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.e.web.EndpointLinksResolver.<init>] - Exposing 6 endpoint(s) beneath base path '/actuator' 
+[2023-03-04 01:21:42] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.coyote.http11.Http11NioProtocol.log] - Starting ProtocolHandler ["http-nio-9990"] 
+[2023-03-04 01:21:43] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer.start] - Tomcat started on port(s): 9990 (http) with context path '' 
+[2023-03-04 01:21:43] [LAPTOP-A7QFO74C] [] [] [INFO] [MyProject.MyProjectApplication.logStarted] - Started MyProjectApplication in 7.539 seconds (JVM running for 11.328) 
+[2023-03-04 01:21:53] [LAPTOP-A7QFO74C] [] [] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/].log] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2023-03-04 01:21:53] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Initializing Servlet 'dispatcherServlet' 
+[2023-03-04 01:21:53] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.web.servlet.DispatcherServlet.initServletBean] - Completed initialization in 8 ms 
+[2023-03-04 03:02:52] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown] - Application shutdown requested. 
+[2023-03-04 03:02:53] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskScheduler.shutdown] - Shutting down ExecutorService 'taskScheduler' 
+[2023-03-04 03:02:53] [LAPTOP-A7QFO74C] [] [] [INFO] [o.s.s.c.ThreadPoolTaskExecutor.shutdown] - Shutting down ExecutorService 'applicationTaskExecutor' 

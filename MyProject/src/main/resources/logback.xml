@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="LOGS_ABSOLUTE_PATH" value="./local/LMSLOG" />
+ 
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[%d{YYYY-MM-dd HH:mm:ss}] [${HOSTNAME}] [%X{Mode}] [%X{Version}] [%level] [%logger{36}.%M] - %msg %n</pattern>
+        </encoder>
+          <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+                <evaluator>
+                    <expression>return message.contains("NOT_SQL_LOG");</expression>
+                </evaluator>
+                <OnMismatch>NEUTRAL</OnMismatch>
+                <OnMatch>DENY</OnMatch>
+            </filter>
+            
+    </appender>
+ 
+    <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOGS_ABSOLUTE_PATH}/logback.log</file>
+        <encoder>
+            <charset>EUC-KR</charset>
+            <pattern>[%d{YYYY-MM-dd HH:mm:ss}] [${HOSTNAME}] [%X{Mode}] [%X{Version}] [%level] [%logger{36}.%M] - %msg %n</pattern>
+        </encoder>
+         <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+                <evaluator>
+                    <expression>return message.contains("NOT_SQL_LOG");</expression>
+                </evaluator>
+                <OnMismatch>NEUTRAL</OnMismatch>
+                <OnMatch>DENY</OnMatch>
+            </filter>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+           <fileNamePattern>${LOGS_ABSOLUTE_PATH}/%d{yyyy-MM-dd}/logback.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+	      <maxHistory>30</maxHistory>  
+	      <totalSizeCap>1GB</totalSizeCap> 
+	    </rollingPolicy>
+	     
+    </appender>
+    
+  <logger name="jdbc" level="OFF"/>
+   <logger name="jdbc.sqlonly" level="OFF"/>
+<!--    <logger name="jdbc.sqlonly" level="DEBUG"/> -->
+  <logger name="jdbc.sqltiming" level="OFF"/>
+  <logger name="jdbc.audit" level="OFF"/>
+  <logger name="jdbc.resultset" level="OFF"/>
+<!--   <logger name="jdbc.resultsettable" level="DEBUG"/> -->
+  <logger name="jdbc.resultsettable" level="OFF"/>
+  <logger name="jdbc.connection" level="OFF"/>
+  
+  <logger name="src.Main"  level="DEBUG" additivity="false">
+  		<appender-ref ref="STDOUT" />
+        <appender-ref ref="ROLLING" />
+    </logger>
+  <root level="INFO">
+    <appender-ref ref="STDOUT" />
+    <appender-ref ref="ROLLING" />
+  </root>
+  
+
+</configuration>
