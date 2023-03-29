@@ -82,7 +82,7 @@ spring:
 #      enabled: false
 
 server: 
-  port: 9990
+  port: 8080
 
 
 

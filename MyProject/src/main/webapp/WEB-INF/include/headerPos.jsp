@@ -23,7 +23,6 @@ String nowProfile = MyProject.ConfigUtil.getActiveMode();
     
     
     <script> var nowactive = '<%=nowProfile%>';</script>
-    <script type="text/javascript" src="<c:url value='/js/core/jquery-1.12.4.min.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/js/core/jquery-3.2.1.min.js'/>"></script>
 
     <script type="text/javascript" src="<c:url value='/js/core/jquery.cookie-1.4.1.min.js'/>"></script>
