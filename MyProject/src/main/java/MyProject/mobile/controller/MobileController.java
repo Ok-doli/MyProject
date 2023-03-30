@@ -9,10 +9,8 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.commons.lang.RandomStringUtils;
-import org.json.simple.JSONArray;
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,14 +20,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import org.springframework.web.servlet.view.RedirectView;
 
 import MyProject.LogUtil;
 import MyProject.RequestUtil;
-import MyProject.mobile.AuthVO;
 import MyProject.mobile.service.MobileService;
+
+
+import java.awt.Dimension;
+import java.awt.DisplayMode;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
+
 
 /**
  * @FileName : MyProject.mobile.controller |_ MobileController.java
@@ -51,7 +52,8 @@ public class MobileController extends LogUtil {
 
 	@Autowired
 	private MobileService mobileService;
-
+	
+	
 	/**
 	 * @Method Name : Main
 	 * @작성일 : 2021. 3. 26.
@@ -65,9 +67,11 @@ public class MobileController extends LogUtil {
 	 * @throws Exception
 	 */
 
+
 //	@RequestMapping(value = { "/", "/CheckAuth" })
 //	public RedirectView Root(HttpServletRequest request, ModelMap model, RedirectAttributes redirectAttributes,
-//			HttpServletResponse response) throws Exception {
+//		HttpServletResponse response) throws Exception {
+//
 //		RedirectView redirectView = new RedirectView();
 //		JSONObject cookie = RequestUtil.getCookieObject(request);
 //		JSONParser parser = new JSONParser();
@@ -83,16 +87,13 @@ public class MobileController extends LogUtil {
 //			
 //		}
 //		
-//		String device = (String) cookie.get("device") == null ? "" : (String) cookie.get("device");
-//
-//
 //		redirectView.setUrl(view);
+//	
 //
 //		return redirectView;
 //	}
 	@RequestMapping(value = "/")
 	public String myHome(HttpServletRequest request, ModelMap model) throws Exception {
-
 		return "main/myHome";
 	}
 
@@ -106,11 +107,41 @@ public class MobileController extends LogUtil {
 		
 		return "blueOne/blueOneHome";
 	}
+
+	
 	@RequestMapping(value = "/TabletPosHome.do")
 	public String TabletPosHome(HttpServletRequest request, ModelMap model) throws Exception {
-		
 		return "TabletPos/TabletPosHome";
 	}
+	
+	@RequestMapping(value = "/TabletPosHome2.do")
+	public String TabletPosHome2(HttpServletRequest request, ModelMap model) throws Exception {
+		return "TabletPos/TabletPosHome2";
+	}
+	
+	public  String DeviceCheck(HttpServletRequest req) {
+		String userAgent = req.getHeader("User-Agent").toUpperCase();
+		String Device;
+		String IS_MOBILE = "MOBILE";
+		String IS_PHONE = "PHONE";
+		String IS_TABLET = "TABLET";
+		String IS_PC = "PC";
+
+		
+//	    if(userAgent.indexOf(IS_MOBILE) > -1) {
+//	        if(userAgent.indexOf(IS_PHONE) == -1)
+//		    return IS_MOBILE;
+//		else
+//		    return IS_TABLET;
+//	    } else
+//	return IS_PC; 
+//		Device = (userAgent.indexOf(IS_MOBILE) > -1) ? (userAgent.indexOf(IS_PHONE) == -1) ? IS_PHONE :  IS_TABLET	: IS_PC;
+		Device = (userAgent.indexOf(IS_MOBILE) > -1) ? (userAgent.indexOf(IS_PHONE) == -1) ? IS_PHONE :  IS_PHONE	: IS_PC;
+		
+	    return Device;
+	}
+	
+
 
 
 

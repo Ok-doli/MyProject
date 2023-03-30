@@ -33,7 +33,7 @@ String nowProfile = MyProject.ConfigUtil.getActiveMode();
 	<script type="text/javascript" src="<c:url value='/js/core/sockjs-1.4.0.min.js'/>"></script>
 	<script type="text/javascript" src="<c:url value='/js/core/stomp-2.3.3.min.js'/>"></script>
 	<script type="text/javascript" src="<c:url value='/js/core/jquery.blockUI-2.70.0.min.js'/>"></script>
-	<script type="text/javascript" src="<c:url value='/js/core/bootstrap.bundle.js'/>"></script>
+<%-- 	<script type="text/javascript" src="<c:url value='/js/core/bootstrap.bundle.js'/>"></script> --%>
 	<script src="/js/core/jquery-ui.js"></script>
 	<script  type="text/javascript" src="<c:url value='/js/core/xlsx.full.min.js'/>"> </script>  
 	
