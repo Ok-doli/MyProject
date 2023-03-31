@@ -1,70 +1,40 @@
 /* Color Set */
 :root {
-    --Color-YGreen-50 : #FAFDE8;
-    --Color-YGreen-100: #F0FABD;
-    --Color-YGreen-200: #E4F797;
-    --Color-YGreen-300: #D2F25F;
-    --Color-YGreen-400: #BCE935;
-    --Color-YGreen-500: #A0DA11;
-    --Color-YGreen-600: #79AA0D;
-    --Color-YGreen-700: #537B0A;
-    --Color-YGreen-800: #3D5E08;
-    --Color-YGreen-900: #294206;
-   
-    --Color-Blue-50 : #E6F7FF;
-    --Color-Blue-100: #B3E4FF;
-    --Color-Blue-200: #8FD4FF;
-    --Color-Blue-300: #5CBBFF;
-    --Color-Blue-400: #33A3FF;
-    --Color-Blue-500: #0A89FF;
-    --Color-Blue-600: #006CE0;
-    --Color-Blue-700: #0050B3;
-    --Color-Blue-800: #00398A;
-    --Color-Blue-900: #001D4D;
+    --Main-Coral : #FF4D4D;
+    --Main-CoolBrown : #DA7E29;
+    --Main-DarkOrange : #DA4529;
+    --Main-Color : #534D4F;
     
-    --Color-GrayCool-50 : #F3F5F7;
-    --Color-GrayCool-100: #E1E6EB;
-    --Color-GrayCool-200: #C7CDD3;
-    --Color-GrayCool-300: #AAB4BE;
-    --Color-GrayCool-400: #919BA5;
-    --Color-GrayCool-500: #78828C;
-    --Color-GrayCool-600: #5F6973;
-    --Color-GrayCool-700: #46505A;
-    --Color-GrayCool-800: #2D3741;
-    --Color-GrayCool-900: #141E28;
+    --Gray-50 : #F5F5F5;
+    --Gray-100: #E5E5E5;
+    --Gray-200: #C2C2C2;
+    --Gray-300: #A8A8A8;
+    --Gray-400: #8D8D8D;
+    --Gray-500: #666666;
+    --Gray-600: #525252;
+    --Gray-700: #393939;
+    --Gray-800: #262626;
+    --Gray-900: #161616;
     
-    --Color-Gray-50 : #F5F5F5;
-    --Color-Gray-100: #E5E5E5;
-    --Color-Gray-200: #C2C2C2;
-    --Color-Gray-300: #A8A8A8;
-    --Color-Gray-400: #8D8D8D;
-    --Color-Gray-500: #666666;
-    --Color-Gray-600: #525252;
-    --Color-Gray-700: #393939;
-    --Color-Gray-800: #262626;
-    --Color-Gray-900: #161616;
-    
-    --Color-White: #ffffff;
-    --Color-Black: #000000;
-    --Color-Add: #F9FAFB;
-    
-    --Color-Alert-R: #FF333D;
-    --Color-Alert-O: #FF832B;
-    --Color-Alert-Y: #FFBC00;
-    --Color-Alert-G: #009929;
-    --Color-Alert-B: #0F62FE;
-    
-    --Color-AlertLine-R: #F8C0C3;
-    --Color-AlertLine-O: #F8D7C0;
-    --Color-AlertLine-Y: #F8E9C0;
-    --Color-AlertLine-G: #C0F8CF;
-    --Color-AlertLine-B: #C0D7F8;
-    
-    --Color-AlertW-R: #FDF6F6;
-    --Color-AlertW-O: #FFF3EA;
-    --Color-AlertW-Y: #FFF9EA;
-    --Color-AlertW-G: #EEFBF1;
+    --W: #ffffff;
+    --B: #000000;
 }
+
+/* BACKGROUND_COLOR */
+.bck_coral{
+	background-color: var(--Main-Coral);
+}
+.bck_coolBrown{
+	background-color: var(--Main-CoolBrown);
+}
+.bck_darkOrange{
+	background-color: var(--Main-DarkOrange);
+}
+.bck_mainColor{
+	background-color: var(--Main-Color);
+}
+
+
 
 @font-face {
     font-family: 'Pretendard-Header1';
@@ -282,6 +252,7 @@ html, body {
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	user-select: none;
+	background-color: var(--W);
 	}
 
 button {
@@ -308,28 +279,55 @@ div {
 	vertical-align: middle;
 }
 
-.flex_center{
+.tablet_default {
+	display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.phone_default {
+	display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.pc_default {
+	display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.flex{
+	display: flex;
+}
+.flex_center_col{
 	display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
     flex-direction: row;
 }
-.flex_left{
+.flex_left_col{
 	display: flex;
     align-items: center;
     justify-content: flex-start;
     align-content: center;
     flex-direction: row;
 }
-.flex_right{
+.flex_left_row{
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.flex_right_col{
 	display: flex;
     align-items: center;
     justify-content: flex-end;
     align-content: center;
     flex-direction: row;
 }
-.flex_between{
+.flex_between_col{
 	display: flex;
     align-items: center;
     justify-content: space-between;
@@ -337,7 +335,14 @@ div {
     flex-direction: row;
     text-align: right;
 }
-.flex_between_around{
+.flex_between_row{
+	display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex_between_around_col{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -346,6 +351,74 @@ div {
     text-align: right;
 }
 
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start; /* 이미지를 왼쪽으로 정렬 */
+	align-content: flex-start; /* 바둑판식으로 정렬 */
+	gap: 10px;
+}
+.box {
+	flex-basis: calc(33.33% - 9px); /* width 3개의 영역으로 나눔*/
+	margin-bottom: 10px;
+	border: 1px solid black;
+}
+.box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.list {
+	display: flex;
+	flex-direction: column; /* 바둑판식으로 정렬 */
+}
+.w1 {
+	width: 10%
+}
+.w2 {
+	width: 20%
+}
+.w3 {
+	width: 30%
+}
+.w4 {
+	width: 40%
+}
+.w5 {
+	width: 50%
+}
+.w6 {
+	width: 60%
+}
+.w7 {
+	width: 70%
+}
+.w8 {
+	width: 80%
+}
+.w9 {
+	width: 90%
+}
+.w9 {
+	width: 100%
+}
+.btn_defalt{
+	text-align: center;
+	padding: 16px;
+	margin: 0 16px;
+	border-radius: 50px;
+}
+
+/* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+.scroll_y::-webkit-scrollbar {
+  display: none;
+}
+.scroll_y {
+  
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
 
 /*  최대 너비 319px */
 @media (max-width: 319px) {
@@ -430,6 +503,7 @@ div {
 
 /* 최소 너비 320px 이상, 최대 너비 359px 이하 */
 @media (min-width: 320px) and (max-width: 359px) {
+
 	.font_H1{
 		font-size: 39px;
 	}

@@ -9,6 +9,7 @@ String nowProfile = MyProject.ConfigUtil.getActiveMode();
 %>
 <head>
 	<title>MyProject</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, viewport-fit=cover">
 
@@ -52,8 +53,76 @@ String nowProfile = MyProject.ConfigUtil.getActiveMode();
 <%
 %>
 <script>
+let DEVICE_MODE = ''; 
 $(document).ready(() => {
+	var md = new MobileDetect(navigator.userAgent);
+	DEVICE_MODE = (md.tablet()) ? 'TABLET' 
+				 :(md.phone()) ? 'PHONE'
+			     : 'PC' ;
+	if(DEVICE_MODE == 'PHONE'){
+		$('body >div').addClass('phone_default');
+	}else if(DEVICE_MODE == 'TABLET'){
+		$('body>div').addClass('tablet_default');
+	}else{
+		$('body>div').addClass('pc_default');
+	}
+	
+// 	if(checkPlatform(window.navigator.userAgent) == "mobile"){//모바일  진입
+		
+// 	}else{//PC  진입
+// 	}
+// 	console.log( md.mobile() );          // 'Sony'
+// 	console.log( md.phone() );           // 'Sony'
+// 	console.log( md.tablet() );          // null
+// 	console.log( md.userAgent() );       // 'Safari'
+// 	console.log( md.os() );              // 'AndroidOS'
+// 	console.log( md.is('iPhone') );      // false
+// 	console.log( md.is('bot') );         // false
+// 	console.log( md.version('Webkit') );         // 534.3
+// 	console.log( md.versionStr('Build') );       // '4.1.A.0.562'
+// 	console.log( md.match('playstation|xbox') ); // false
+	
 });
+
+
+function checkPlatform(ua) {
+	if(ua === undefined) {
+		ua = window.navigator.userAgent;
+	}
+	
+	ua = ua.toLowerCase();
+	var platform = {};
+	var matched = {};
+	var userPlatform = "pc";
+	var platform_match = /(ipad)/.exec(ua) || /(ipod)/.exec(ua) 
+		|| /(windows phone)/.exec(ua) || /(iphone)/.exec(ua) 
+		|| /(kindle)/.exec(ua) || /(silk)/.exec(ua) || /(android)/.exec(ua) 
+		|| /(win)/.exec(ua) || /(mac)/.exec(ua) || /(linux)/.exec(ua)
+		|| /(cros)/.exec(ua) || /(playbook)/.exec(ua)
+		|| /(bb)/.exec(ua) || /(blackberry)/.exec(ua)
+		|| [];
+	
+	matched.platform = platform_match[0] || "";
+	
+	if(matched.platform) {
+		platform[matched.platform] = true;
+	}
+	
+	if(platform.android || platform.bb || platform.blackberry
+			|| platform.ipad || platform.iphone 
+			|| platform.ipod || platform.kindle 
+			|| platform.playbook || platform.silk
+			|| platform["windows phone"]) {
+		userPlatform = "mobile";
+	}
+	
+	if(platform.cros || platform.mac || platform.linux || platform.win) {
+		userPlatform = "pc";
+	}
+	
+	return userPlatform;
+}
+
 </script>
 
 
