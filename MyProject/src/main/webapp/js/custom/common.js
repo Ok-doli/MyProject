@@ -2781,7 +2781,4 @@ function postBriqueHome() {
 function postTabletPosHome() {
 	location.href="/TabletPosHome.do"
 }
-function ReactPosHome() {
-	location.href="/ReactPosHome.do"
-}
  

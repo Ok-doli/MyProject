@@ -9,7 +9,6 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.maven.model.Model;
 import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.json.simple.JSONObject;
 import org.slf4j.Logger;
@@ -140,11 +139,6 @@ public class MobileController extends LogUtil {
 		Device = (userAgent.indexOf(IS_MOBILE) > -1) ? (userAgent.indexOf(IS_PHONE) == -1) ? IS_PHONE :  IS_PHONE	: IS_PC;
 		
 	    return Device;
-	}
-	
-	@RequestMapping(value = "/ReactPosHome.do")
-	public String ReactPosHome(HttpServletRequest request, ModelMap model) throws Exception {
-		return "ReactPos/ReactPosHome";
 	}
 	
 
