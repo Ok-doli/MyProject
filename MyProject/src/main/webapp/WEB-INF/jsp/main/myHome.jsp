@@ -9,6 +9,7 @@
 	<div id="bluOne" class="btn_box font_15px">블루원으로 이동</div>
 	<div id="TabletPos" class="btn_box font_15px">내부프로젝트 이동</div>
 	
+	<div id="ReactPos" class="btn_box font_15px">리액트프로젝트 이동</div>	
 </div>
 
 
@@ -25,6 +26,10 @@ $(document).ready(function() {
 	$("#TabletPos").click(function name() {;
 		postTabletPosHome();
 	});
+	$("#ReactPos").click(function name() {;
+		ReactPosHome();
+	});
+
 });
 </script>
 
