@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Koruri';
+    src: url('../font/ja/Koruri-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Koruri';
+    src: url('../font/ja/Koruri-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Koruri';
+    src: url('../font/ja/Koruri-Semibold.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Koruri';
+    src: url('../font/ja/Koruri-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Koruri';
+    src: url('../font/ja/Koruri-Extrabold.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
