@@ -25,12 +25,10 @@ import MyProject.LogUtil;
 import MyProject.RequestUtil;
 import MyProject.mobile.service.MobileService;
 
-
 import java.awt.Dimension;
 import java.awt.DisplayMode;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
-
 
 /**
  * @FileName : MyProject.mobile.controller |_ MobileController.java
@@ -52,8 +50,7 @@ public class MobileController extends LogUtil {
 
 	@Autowired
 	private MobileService mobileService;
-	
-	
+
 	/**
 	 * @Method Name : Main
 	 * @작성일 : 2021. 3. 26.
@@ -66,7 +63,6 @@ public class MobileController extends LogUtil {
 	 * @return
 	 * @throws Exception
 	 */
-
 
 //	@RequestMapping(value = { "/", "/CheckAuth" })
 //	public RedirectView Root(HttpServletRequest request, ModelMap model, RedirectAttributes redirectAttributes,
@@ -102,24 +98,29 @@ public class MobileController extends LogUtil {
 
 		return "main/Setting";
 	}
+
 	@RequestMapping(value = "/BlueOneHome.do")
 	public String postBlueOne(HttpServletRequest request, ModelMap model) throws Exception {
-		
+
 		return "blueOne/blueOneHome";
 	}
 
-	
 	@RequestMapping(value = "/TabletPosHome.do")
 	public String TabletPosHome(HttpServletRequest request, ModelMap model) throws Exception {
 		return "TabletPos/TabletPosHome";
 	}
-	
+
 	@RequestMapping(value = "/TabletPosHome2.do")
 	public String TabletPosHome2(HttpServletRequest request, ModelMap model) throws Exception {
 		return "TabletPos/TabletPosHome2";
 	}
-	
-	public  String DeviceCheck(HttpServletRequest req) {
+
+	@RequestMapping(value = "/postReateHome.do")
+	public String postReateHome(HttpServletRequest request, ModelMap model) throws Exception {
+		return "reate/reateHome";
+	}
+
+	public String DeviceCheck(HttpServletRequest req) {
 		String userAgent = req.getHeader("User-Agent").toUpperCase();
 		String Device;
 		String IS_MOBILE = "MOBILE";
@@ -127,7 +128,6 @@ public class MobileController extends LogUtil {
 		String IS_TABLET = "TABLET";
 		String IS_PC = "PC";
 
-		
 //	    if(userAgent.indexOf(IS_MOBILE) > -1) {
 //	        if(userAgent.indexOf(IS_PHONE) == -1)
 //		    return IS_MOBILE;
@@ -136,92 +136,78 @@ public class MobileController extends LogUtil {
 //	    } else
 //	return IS_PC; 
 //		Device = (userAgent.indexOf(IS_MOBILE) > -1) ? (userAgent.indexOf(IS_PHONE) == -1) ? IS_PHONE :  IS_TABLET	: IS_PC;
-		Device = (userAgent.indexOf(IS_MOBILE) > -1) ? (userAgent.indexOf(IS_PHONE) == -1) ? IS_PHONE :  IS_PHONE	: IS_PC;
-		
-	    return Device;
+		Device = (userAgent.indexOf(IS_MOBILE) > -1) ? (userAgent.indexOf(IS_PHONE) == -1) ? IS_PHONE : IS_PHONE
+				: IS_PC;
+
+		return Device;
 	}
-	
-
-
-
 
 	@RequestMapping(value = "/notice_Select.do", method = RequestMethod.POST)
-	public ResponseEntity<JSONObject> notice_Select(HttpServletRequest request,  HttpServletResponse response) throws Exception {
+	public ResponseEntity<JSONObject> notice_Select(HttpServletRequest request, HttpServletResponse response)
+			throws Exception {
 		JSONObject obj = new JSONObject();
 		HttpStatus status = HttpStatus.OK;
 		int resultCode = 0;
 		int imgCode = 0;
-		
-		
-		
+
 		try {
 			List<Map> dashboard_notices_data = null;
 			String json = RequestUtil.readJSONStringFromRequestBody(request);
-			JSONObject param = RequestUtil.convertStrToObj(json); //오브젝트 파람
-			
-			
+			JSONObject param = RequestUtil.convertStrToObj(json); // 오브젝트 파람
+
 			dashboard_notices_data = mobileService.notice_Select(param);
-			if(resultCode == 0) {
-				
-				for(int i = 0; i < dashboard_notices_data.size(); i++) {
-					Map map = (Map)dashboard_notices_data.get(i);
+			if (resultCode == 0) {
+
+				for (int i = 0; i < dashboard_notices_data.size(); i++) {
+					Map map = (Map) dashboard_notices_data.get(i);
 					StringBuffer strOut = new StringBuffer();
 
+					if (map.get("content") instanceof java.sql.Clob) {
 
-					if(map.get("content") instanceof java.sql.Clob) {
-						
 						String str = "";
-						java.sql.Clob clob = (java.sql.Clob)map.get("content");
+						java.sql.Clob clob = (java.sql.Clob) map.get("content");
 						BufferedReader br = new BufferedReader(clob.getCharacterStream());
-						
-						while((str = br.readLine()) != null ) {
+
+						while ((str = br.readLine()) != null) {
 							strOut.append(str);
 						}
-						
-						
+
 					}
 					map.put("contentTxt", strOut);
 					map.remove("content");
 				}
-				if(dashboard_notices_data.size() > 0) {
+				if (dashboard_notices_data.size() > 0) {
 					obj.put("Notices", RequestUtil.convertListToArray(dashboard_notices_data));
-					
+
 				}
 			}
-		
-			
+
 		} catch (Exception e) {
 			status = HttpStatus.EXPECTATION_FAILED;
 			resultCode = -1;
 			e.printStackTrace();
 		}
-		
-		
+
 		response.setContentType("application/json; charset=UTF-8");
 
-		
-		
 		obj.put("code", resultCode);
 		obj.put("status", status.value());
 		obj.put("statusText", status);
-		
+
 		obj.put("message", status);
 
-		
-		
 		return new ResponseEntity<JSONObject>(obj, status);
 	}
-	
 
-	
 	/**
-	 * 로그인 가맹점명 조회 
+	 * 로그인 가맹점명 조회
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws Exception
 	 */
 	@RequestMapping(value = "/EntrpsNm_Select.do", method = RequestMethod.POST)
-	public void EntrpsNm_Select(HttpServletRequest request,  HttpServletResponse response) throws Exception {
+	public void EntrpsNm_Select(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		net.sf.json.JSONArray jsonArray = new net.sf.json.JSONArray();
 		HashMap<String, Object> param = RequestUtil.getParameter(request);
 		List<?> list = mobileService.EntrpsNm_Select(param);
@@ -232,6 +218,5 @@ public class MobileController extends LogUtil {
 		out.flush();
 		out.close();
 	}
-	
 
 }

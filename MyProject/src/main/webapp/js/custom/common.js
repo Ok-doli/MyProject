@@ -2782,3 +2782,8 @@ function postTabletPosHome() {
 	location.href="/TabletPosHome.do"
 }
  
+// 홈
+function postReatePosHome() {
+	location.href="/postReateHome.do"
+}
+ 
