@@ -20,32 +20,121 @@
 </head>
 	
 <body>
-<header style="padding: 10px;">
-	<div class="back_icon svg_default icon-19"></div>
+<header>
+	<div class="back_icon svg_default icon_19"></div>
 	<div class="font_16px bold color_black_05">플레이스 만들기</div>
 	<div class="icon_19"></div>
 </header>
-<content>
+<main class="place_main">
 	<section>
-		<div class="font_20px bold color_black_05">생성할 공간을 찍은 동영상을 올려주세요.</div>
-		<div class="font_14px medium color_whiteGray">동영상은 하나만 첨부할 수 있습니다.</div>
+		<article>
+			<div class="font_20px bold color_black_05">생성할 공간을 찍은 동영상을 올려주세요.</div>
+			<div class="font_14px medium color_gray_05" >동영상은 하나만 첨부할 수 있습니다.</div>
+		</article>
+		<article class="video_box svg_default">
+			<div class="close_icon svg_default icon_24"></div>
+			<div class="video_icon svg_default icon_24 video_div"></div>
+			<div class="font_17px semibold color_black_10 video_div">동영상 첨부</div>
+		</article>
 	</section>
-	<section>
-		<div>
-			<div class="video_icon svg_default icon_24"></div>
-			<div class="font_17px semibold color_black_10">동영상 첨부</div>
+	<footer>
+		<div class="bottom_btn color_white semibold font_17px" onclick="f_VideoPopupOpen()"> 다음 </div>
+	</footer>
+</main>
+
+<section class="videoPopup">
+	<article>
+		<div class="regular font_20px color_blue pop_btn" data-type="openGallery" onclick="f_VideoPopupClose(this)">사진첩에서 가져오기</div>
+		<div class="regular font_20px color_blue pop_btn" onclick="f_VideoPopupClose(this)">취소</div>
+	</article>
+</section>
+
+<section class="loaderBox">
+	<div class="loader">
+		<div class="loader-progress"></div>
+		<div class="font_15px bold color_mainGreen loader-text">0%</div>
+	</div>
+	<div class="font_20px color_black_05 bold text_div">영상을 불러오고 있습니다.</div>
+</section>
+
+<section class="errorPopup">
+	<article>
+		<div class="error_textBox">
+			<div class="bold color_black_10 font_20px ">해상도가 맞지 않아요</div>
+			<div class="medium color_gray font_15px">선택한 동영상의 해상도는 HUD입니다. <br>
+				 업로드가 가능한 동영상 해상도는 FHD입니다. 
+				 비디오 설정에서 변경해주세요.
+			</div>
 		</div>
-	</section>
-</content>
-<footer>
-	<div class="non_btn"> 다음 </div>
-</footer>
+		<div class="btn_box">
+			<div class="bottom_btn color_white semibold font_17px" onclick="f_ErrorPopupClose()">닫기</div>
+		</div>
+	</article>
+</section>
+
 </body>
 </html>
 <script type="text/javascript">
-	
+
+let errorType =  'N';
+
 $(document).ready(function(){
 	console.log("안녕하세요 여기는 <동영상 클릭> 화면입니다.");
 
 })
+function f_VideoPopupOpen(){
+	$('.videoPopup').css("display", "flex");
+}
+function f_VideoPopupClose(target){
+	
+	$('.videoPopup').css("display", "none");
+	
+	if($(target).data('type') == 'openGallery'){
+		$('.place_main').css("display", "none");
+		$('.loaderBox').css("display", "flex");
+		startLoading();
+	}
+}
+
+function startLoading() {
+  let currentPercentage = 0;
+  const totalPercentage = 100;
+  const increment = 1;
+  const intervalTime = 10; // 로딩 그래프가 0%부터 1%, 2%로 채워지는 간격
+
+  const interval = setInterval(() => {
+    currentPercentage += increment;
+    updateLoader(currentPercentage);
+    if (currentPercentage >= totalPercentage) {
+      clearInterval(interval);
+	  console.log("로딩 완료!");
+	  (errorType === 'Y') ? f_ErrorPopupOpen() : f_ImgeBinde();
+
+    }
+  }, intervalTime);
+}
+
+function updateLoader(percentage) {
+  const loaderText = document.querySelector('.loader-text');
+  const loaderProgress = document.querySelector('.loader-progress');
+  loaderText.innerText = `${percentage}%`;
+  loaderProgress.style.clip = `rect(0, ${percentage}%, 100px, 0)`;
+}
+
+function f_ImgeBinde() {
+  $('.video_box').addClass('test_img');
+  $('.loaderBox, .video_div').hide();
+  $('.place_main, .close_icon').css("display", "flex");
+  $('.bottom_btn').toggleClass('bottom_btn_activ bottom_btn');
+}
+function f_ErrorPopupOpen(){
+  $('.loaderBox').hide();
+  $('.place_main').css("display", "flex");
+  $('.errorPopup').css("display", "flex");	
+}
+function f_ErrorPopupClose(){
+	$('.errorPopup').hide();
+	$('.test_img').removeClass('test_img');
+}
+
 </script>
