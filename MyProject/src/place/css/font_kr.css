@@ -54,3 +54,8 @@
     font-weight: 900;
     font-display: swap;
 }
+@font-face { 
+    font-family: "SDGothic";
+    src: url("font/AppleSDGothicNeoM.ttf") format("truetype");
+    font-weight: normal;
+  } 
