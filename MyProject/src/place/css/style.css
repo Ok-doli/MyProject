@@ -97,6 +97,7 @@ header{
 	--color-gray-30:	#E0E0E0;
 	--color-gray-35:	#F5F5F5;
 	--color-gray-40:	#808080;
+	--color-gray-50:	#A29D9D;
 	--color-white: 		#FFFFFF;
 	--color-blue:		#007AFF;
 	--color-main-green: #C2E10F;
@@ -325,6 +326,9 @@ footer{
 }
 .color_gray_40{
 	color: var(--color-gray-40);
+}
+.color_gray_50{
+	color: var(--color-gray-50);
 }
 .color_blue{
 	color: var(--color-blue);
