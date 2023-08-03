@@ -2,7 +2,6 @@
 @import url("font_kr.css");
 @import url("font_en.css");
 @import url("font_ja.css");
-@import url("font_ab.css");
 
 
 
@@ -40,10 +39,10 @@ canvas { display: block; width: 100%; height: 100%; -moz-user-select: none; -web
 :root {
 	
 	/* Font */
-	--font-family-InterBold: 'Inter-Bold', sans-serif;
-	--font-family-InterRegular: 'Inter-Regular', sans-serif;
-	--font-family-InterMedium: 'Roboto-Medium', sans-serif;
-	--font-family-InterRegular: 'Roboto-Regular', sans-serif;
+	--font-family-ko: 'Pretendard', 'Malgun Gothic', sans-serif;
+	--font-family-en: 'Roboto', 'Malgun Gothic', 'Dotum', sans-serif;
+	--font-family-ja: 'Koruri', 'Malgun Gothic', 'Dotum', sans-serif;
+	--font-family-num: 'Roboto', 'Malgun Gothic', sans-serif;
 
 	--font-13px: 0.7rem; 
 	--font-14px: 0.8rem; 
@@ -100,20 +99,41 @@ canvas { display: block; width: 100%; height: 100%; -moz-user-select: none; -web
 	--color-black-tint05: #222222;
 	--color-black-tint10: #171717;
 }
+html[lang="ko"] { font: var(--font-weight-400) var(--font-15px)/1.4 var(--font-family-ko); }
+html[lang="en"] { font: var(--font-weight-400) var(--font-15px)/1.4 var(--font-family-en); }
+html[lang="ja"] { font: var(--font-weight-400) var(--font-15px)/1.4 var(--font-family-ja); }
+
+
+/* font-weight */
+.regular {
+	font-family: 'Pretendard-regular';
+}
+.medium {
+	font-family: 'Pretendard-medium';
+}
+.semibold {
+	font-family: 'Pretendard-semibold';
+}
+.bold {
+	font-family: 'Pretendard-bold';
+}
 
 .InterBold {
-	font-family: var(--font-family-InterBold);
+	font-family:'Inter-Bold';
 }
 .InterRegular {
-	font-family: var(--font-family-InterRegular);
+	font-family: 'Inter-Regular';
 }
 .RobotoMedium {
-	font-family: var(--font-family-InterMediumr);
+	font-family: 'Roboto-Medium';
 }
 .RobotoRegular {
-	font-family: var(--font-family-InterRegular);
+	font-family: 'Roboto-Regular';
 }
 
+html[lang="ko"] { 
+	font: var(--font-weight-400) var(--font-size-16px)/1.4 var(--font-family-InterRegular); 
+}
 
 
 
