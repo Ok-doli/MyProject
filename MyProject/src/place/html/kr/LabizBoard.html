@@ -36,7 +36,7 @@
 		<article class="smartEd">
 			<form action="insert" method="post">
 				<div>
-					<textarea name="editorTxt" id="editorTxt" 
+					<textarea name="editorTxt" id="editorTxt"
 					cols="20" rows="15" style="width:100%; min-height: 274px;"
 					placeholder="내용을 입력하세요."></textarea>
 				</div>
@@ -69,21 +69,26 @@
 
 
 <script type="text/javascript">
-	let oEditors = [];
 
-	smartEditor = function() {
+	var oEditors = [];
+
+smartEditor = function() {
 		nhn.husky.EZCreator.createInIFrame({
 			oAppRef : oEditors,
 			elPlaceHolder: "editorTxt",
-			sSkinURI: "/smarteditor/SmartEditor2Skin.html",
+			sSkinURI: "../../smarteditor/SmartEditor2Skin.html",
 			fCreator: "createSEditor2"
-		})
+		});
 	}
 
+	
+
 	$(document).ready(function(){
-		smartEditor()
+		smartEditor();
 	})
 
+
+	
 	submitPost = function(){
 		oEditors.getById["editorTxt"].exec("UPDATE_CONTENTS_FIELD", [])
 		let content = document.getElementById("editTxt").ariaValueMax

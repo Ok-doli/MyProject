@@ -468,6 +468,14 @@ main >section>article>div{
 	align-items: center;
 	height: 48px;
 }
+.board .place_main{
+	overflow-y:auto;
+	overflow-x: hidden;
+}
+
+.gBoard footer{
+	position: static;
+}
 
 /*girabeeBoard*/
 .spain1_img{
