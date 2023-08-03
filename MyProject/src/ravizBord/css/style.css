@@ -119,10 +119,10 @@ html[lang="ja"] { font: var(--font-weight-400) var(--font-15px)/1.4 var(--font-f
 }
 
 .InterBold {
-	font-family:'Inter-Bold';
+	font-family:'Pretendard-bold';
 }
 .InterRegular {
-	font-family: 'Inter-Regular';
+	font-family: 'Pretendard-regular';;
 }
 .RobotoMedium {
 	font-family: 'Roboto-Medium';
@@ -735,7 +735,7 @@ main{
     align-items: center;
 }
 .detailView .card_comment >.card_comment_l{
-	width: 85%;
+	width: 84%;
     background-color: var(--color-gray-tint10);
     display: flex;
     align-items: center;
@@ -753,7 +753,7 @@ main{
     color: var(--color-white);
 }
 .detailView .card_comment >.card_comment_r{
-	width: 15%;
+	width: 16%;
     background-color: var(--color-gray-tint10);
     display: flex;
     align-items: center;
@@ -790,7 +790,7 @@ main{
     top: 21px;
     background-color: var(--color-black-tint10);
     border-radius: 15px;
-	padding: 0 3px;
+	padding: 0 5px;
 }
 .detailView .moreMenu_box> div{
 	padding: 8px 16px;
