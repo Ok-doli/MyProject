@@ -36,10 +36,41 @@
 		<div class="InterBold font_18px color_Green">라비즈 게시판 </div>
 	</section>
 	<section>
-		<div class="svg_default icon_24 plusGreen_icon"></div>
+		<div class="svg_default icon_24 plusGreen_icon" onclick="f_GoBordCreate()"></div>
 	</section>
 </header>
 <main>
+	<section class="data_none">
+		<div class="font_14px RobotoMedium color_white">등록된 게시글이 없습니다.<br>게시글을 등록하여 서포터즈에게 알리세요!</div>
+	</section>
+	<section class="card" onclick="f_GoDetailView()">
+		<article class="card_header">
+			<div class="font_14px RobotoMedium color_white">작성자<span class="font_14px medium color_gray30">00월 00일</span></span></div>
+			<div class="font_14px RobotoMedium color_white">...</div>
+		</article>
+		<article class="card_text">
+			<div class="font_14px RobotoMedium color_white card_text_header">마블의 신작! 로키</div>
+			<div class="font_14px RobotoMedium color_white card_text_content">
+				마블 스튜디오의 #로키의 영광스러운 도착에 대한 당신의 
+				카운트다운을 시작하세요!
+			</div>
+		</article>
+		<article class="svg_default test_img">
+		</article>
+		<article class="card_day">
+			<div class="font_14px RobotoMedium color_gray30">00월 00일</div>
+		</article>
+		<article class="card_bottom">
+			<div class="card_bottom_box">
+				<div class="svg_default heart_icon icon_24"></div>
+				<div class="font_14px RobotoMedium color_white ">좋아요</div>
+			</div>
+			<div class="card_bottom_box">
+				<div class="svg_default message_icon icon_24"></div>
+				<div class="font_14px RobotoMedium color_white">댓글</div>
+			</div>
+		</article>
+	</section>
 	<section class="card" onclick="f_GoDetailView()">
 		<article class="card_header">
 			<div class="font_14px RobotoMedium color_white">작성자<span class="font_14px medium color_gray30">00월 00일</span></span></div>
@@ -70,15 +101,16 @@
 	</section>
 	
 </main>
+
 <footer>
-	<section>
+	<section class="bottom_box">
 		<div class="svg_default icon_70 Home_btn"></div>
 		<div class="svg_default icon_70 community_btn"></div>
 	</section>
-	<section>
+	<section class="bottom_box_center">
 		<div class="svg_default icon_30 plus_btn"></div>
 	</section>
-	<section>
+	<section class="bottom_box">
 		<div class="svg_default icon_70 model3d_btn"></div>
 		<div class="svg_default icon_70 myPage_btn"></div>
 	</section>
@@ -88,12 +120,31 @@
 </html>
 
 <script type="text/javascript">
+	let dataRow = 1; //데이터가 한개도 없을때
 $(document).ready(function(){
 	console.log("안녕하세요 여기는 <커뮤니티 라비즈 블랙 상세보기> 화면입니다.");
 
+	$(".backbutton_icon").click(function() {
+    	history.back(); // 브라우저의 방문 기록을 이용하여 이전 페이지로 이동
+  	});
+	
+	if(dataRow == 0){
+		$('.card').hide();
+		$('.data_none').show();
+	}else{
+		$('.card').show();
+		$('.data_none').hide();
+	}
+
 });
+
+
 
 function f_GoDetailView(){
 	location.href="./ravizBordDetailView.html";
+}
+
+function f_GoBordCreate(){
+	location.href="./ravizBordCreate.html";
 }
 </script>

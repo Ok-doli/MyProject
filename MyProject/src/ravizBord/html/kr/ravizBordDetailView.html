@@ -35,15 +35,19 @@
 	<section>
 		<div class="InterBold font_18px color_Green">라비즈 게시판 상세보기</div>
 	</section>
-	<section>
-		<div class="svg_default icon_30 dot_icon"></div>
+	<section class="moreMenuBtn" >
+		<div class="svg_default icon_30 dot_icon" onclick="f_MoreMenuOpen()"></div>
+		<article class="moreMenu_box" >
+			<div class="font_13px InterRegular color_white" onclick="f_GoCreateSub()">수정</div>
+			<div class="font_13px InterRegular color_white" onclick="f_CardDelete()">삭제</div>
+		</article>
 	</section>
 </header>
 <main>
 	<section class="card">
 		<article class="card_header">
 			<div class="font_14px RobotoMedium color_white">작성자<span class="font_14px medium color_gray30">00월 00일</span></span></div>
-			<div class="font_14px RobotoMedium color_white">...</div>
+			<div class="font_14px RobotoMedium color_white"></div>
 		</article>
 		<article class="card_text">
 			<div class="font_14px RobotoMedium color_white card_text_header">마블의 신작! 로키</div>
@@ -97,24 +101,40 @@
 		</article>
 		<article class="card_comment">
 			<div class="card_comment_l">
-				<input type="text" class="font_15px RobotoMedium color_white" placeholder="댓글을 입력하세요.">
+				<input type="text" class="font_15px InterRegular color_white" placeholder="댓글을 입력하세요.">
 			</div>
 			<div class="card_comment_r">
-				<div class="font_15px RobotoMedium color_white">등 록</div>
+				<div class="font_15px InterRegular color_white">등 록</div>
 			</div>
 		</article>
 	</section>
+	<section>
+		<article class="comment_box">
+			<div>
+				<div class="svg_default people_icon icon_24"></div>
+				<div class="font_15px InterRegular color_white">토르님의 댓글</div>
+			</div>
+			<div>
+				<div class="font_14px InterRegular color_gray30">00월 00일</div>
+			</div>
+		</article>
+		<article class="comment_content">
+			<div class="font_15px InterRegular color_white">영화 평점 좋습니다. 돈이 아깝지 않았아요.</div>
+		</article>
+
+	</section>
 	
 </main>
+
 <footer>
-	<section>
+	<section class="bottom_box">
 		<div class="svg_default icon_70 Home_btn"></div>
 		<div class="svg_default icon_70 community_btn"></div>
 	</section>
-	<section>
+	<section class="bottom_box_center">
 		<div class="svg_default icon_30 plus_btn"></div>
 	</section>
-	<section>
+	<section class="bottom_box">
 		<div class="svg_default icon_70 model3d_btn"></div>
 		<div class="svg_default icon_70 myPage_btn"></div>
 	</section>
@@ -126,11 +146,21 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	console.log("안녕하세요 여기는 <커뮤니티 라비즈 블랙> 화면입니다.");
-
+	$(".backbutton_icon").click(function() {
+    	history.back(); // 브라우저의 방문 기록을 이용하여 이전 페이지로 이동
+  	});
 });
 
 
-function f_GoDetailView(){
-	location.href="./List.jsp";
+function f_MoreMenuOpen(){
+	$('.moreMenu_box').addClass('show');
+}
+
+function f_CardDelete(){
+	$('.moreMenu_box').removeClass('show');
+}
+
+function f_GoCreateSub(){
+	location.href="./ravizBordCreateSub.html";
 }
 </script>

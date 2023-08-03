@@ -1,0 +1,92 @@
+
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<title>Girabee Metaverse</title>
+		
+	<!--[CSS]-->
+	<link rel="stylesheet" href="../../css/jquery-ui.css"/>
+	<link rel="stylesheet" href="../../css/slick.css"/>
+	<link rel="stylesheet" href="../../css/style.css"/>
+
+	<!--[JS]-->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/slick.min.js"></script>
+</head>
+	 
+<body class="create">
+
+<header class="main_header">
+	<section>
+		<div class="headerTop svg_default "></div>
+	</section>
+	<section>
+		<div class="bell_icon  svg_default icon_23"></div>
+	</section>
+</header>
+<header class="sub_header">
+	<section>
+		<div class="svg_default icon_35 backbutton_icon"></div>
+	</section>
+	<section>
+		<div class="InterBold font_18px color_Green">게시물 작성하기</div>
+	</section>
+	<section>
+		<div class="InterBold font_18px color_Green">저장</div>
+	</section>
+</header>
+<main>
+	<section class="content_box">
+		<header>
+			<input type="text"  class="color_white InterRegular font_15px"  placeholder="+ 제목">
+		</header>
+		<article class="textarea_box">
+			<textarea  type="text" class="color_white InterRegular font_15px" placeholder="내용 입력 게시물 내용을 입력하고 이미지, 동영상등을 추가하여 더 많은 독자를 유도할 수 있습니다."></textarea>
+		</article>
+	</section>
+	<section class="option_box">
+		<article>
+			<div class="svg_default icon_24 text_icon"></div>
+		</article>
+		<article>
+			<div class="svg_default icon_24 camera_icon"></div>
+			<div class="svg_default icon_24 video_icon"></div>
+			<div class="svg_default icon_24 playCircle_icon"></div>
+			<div class="svg_default icon_24 attachment_icon"></div>
+		</article>
+	</section>
+</main>
+
+<footer>
+	<section class="bottom_box">
+		<div class="svg_default icon_70 Home_btn"></div>
+		<div class="svg_default icon_70 community_btn"></div>
+	</section>
+	<section class="bottom_box_center">
+		<div class="svg_default icon_30 plus_btn"></div>
+	</section>
+	<section class="bottom_box">
+		<div class="svg_default icon_70 model3d_btn"></div>
+		<div class="svg_default icon_70 myPage_btn"></div>
+	</section>
+</footer>
+
+</body>
+</html>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	console.log("안녕하세요 여기는 <커뮤니티 라비즈 블랙 상세보기> 화면입니다.");
+	$(".backbutton_icon").click(function() {
+    	history.back(); // 브라우저의 방문 기록을 이용하여 이전 페이지로 이동
+  	});
+});
+
+function f_GoDetailView(){
+	location.href="./ravizBordDetailView.html";
+}
+</script>
