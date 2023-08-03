@@ -263,6 +263,7 @@ footer{
 	width: 100%;
 	justify-content: space-evenly;
 	border-top: 1px solid #B0B0B2;
+	background-color: #FFFFFF;
 }
 
 
@@ -664,7 +665,8 @@ main >section>article>div{
 	width: 100vw;
 }
 .gBoard .place_main{
-	overflow-y: scroll;
+	overflow-y:auto;
+	overflow-x: hidden;
 }
 
 .gBoard footer{
