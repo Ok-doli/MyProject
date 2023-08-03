@@ -1,34 +1,10 @@
 @charset "utf-8";
+@import url("font_kr.css");
+@import url("font_en.css");
+@import url("font_ja.css");
+@import url("font_ab.css");
 
-@font-face {
-    font-family: 'Inter-Bold';
-    src: url(../font/kr/Inter-Bold.ttf) format('truetype'),
-		 url(../font/kr/Inter-Bold.woff) format('woff');
-    font-weight: 700;
-    font-display: swap;
-}
 
-@font-face {
-    font-family: 'Inter-Regular';
-    src: url(../font/kr/Inter-Regular.ttf) format('truetype'),
-		 url(../font/kr/Inter-Regular.woff) format('woff');
-    font-weight: 400;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Roboto-Medium';
-    src: url(../font/kr/Roboto-Medium.ttf) format('truetype'),
-		 url(../font/kr/Roboto-Medium.woff) format('woff');
-    font-weight: 500;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Roboto-Regular';
-    src: url(../font/kr/Roboto-Regular.ttf) format('truetype'),
-		 url(../font/kr/Roboto-Regular.woff) format('woff');
-    font-weight: 400;
-    font-display: swap;
-}
 
 /* 작성자 : 강다현(kl4058@gmail.com) / 최초작성일 : 2023-08-02 버전 1.0.0 */
 
@@ -64,6 +40,8 @@ canvas { display: block; width: 100%; height: 100%; -moz-user-select: none; -web
 :root {
 	
 	/* Font */
+	--font-family-ko: 'Inter-Boldd', 'Malgun Gothic', sans-serif;
+
 	--font-13px: 0.7rem; 
 	--font-14px: 0.8rem; 
 	--font-15px: 1.0rem; 
@@ -121,7 +99,7 @@ canvas { display: block; width: 100%; height: 100%; -moz-user-select: none; -web
 }
 
 .InterBold {
-	font-family: 'Inter-Bold';
+	font-family: var(--font-family-ko);
 }
 .InterRegular {
 	font-family: 'Inter-Regular';
