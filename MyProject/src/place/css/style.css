@@ -455,6 +455,12 @@ main >section>article>div{
 	height: 48px;
 	border-radius: 10px;
 	border: 1px solid #DEDEDE;
+	display: block;
+}
+.urlName{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .center{
 	display: flex;
